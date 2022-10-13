@@ -1,6 +1,6 @@
 import React from "react";
 import './Contacts.scss';
-import phone from './icons/phone.svg';
+// import phone from './icons/phone.svg';
 import email from './icons/email.svg';
 import linkedin from './icons/linkedin.svg';
 import telegram from './icons/telegram.svg';
@@ -13,7 +13,7 @@ import instagram from './icons/instagram.svg';
 import photo320 from './images/contacts-320.png';
 
 export const Contacts = () => {
-  const root = window.location.origin;
+  const phone = 'https://github.com/uliton/CV/blob/main/src/components/Contacts/icons/phone.svg';
 
   return (
     <div className="contacts">
@@ -27,7 +27,7 @@ export const Contacts = () => {
           className="link"
           title="Phone"
         >
-          <img src={`${root}/icons/phone.svg`} alt="phone" className="icon" />
+          <img src={phone} alt="phone" className="icon" />
         </a>
 
         <a
