@@ -1,16 +1,16 @@
 import React from "react";
 import './Contacts.scss';
-import phone from '../../images/icons/phone.svg';
-import email from '../../images/icons/email.svg';
-import linkedin from '../../images/icons/linkedin.svg';
-import telegram from '../../images/icons/telegram.svg';
-import github from '../../images/icons/github.svg';
-import facebook from '../../images/icons/facebook.svg';
-import skype from '../../images/icons/skype.svg';
-import viber from '../../images/icons/viber.svg';
-import whatsapp from '../../images/icons/whatsapp.svg';
-import instagram from '../../images/icons/instagram.svg';
-import photo320 from '../../images/myself/contacts-320.png';
+import phone from './icons/phone.svg';
+import email from './icons/email.svg';
+import linkedin from './icons/linkedin.svg';
+import telegram from './icons/telegram.svg';
+import github from './icons/github.svg';
+import facebook from './icons/facebook.svg';
+import skype from './icons/skype.svg';
+import viber from './icons/viber.svg';
+import whatsapp from './icons/whatsapp.svg';
+import instagram from './icons/instagram.svg';
+import photo320 from './images/contacts-320.png';
 
 export const Contacts = () => {
   return (
