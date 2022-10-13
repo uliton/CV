@@ -1,0 +1,37 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 139px);
+
+  &__preview-text {
+    border-top: 1px solid #F9F9F9;
+    margin: 0 24px;
+    padding: 45px 35px;
+    text-align: center;
+    line-height: 150%;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+}
+
+.link {
+  height: 46px;
+}
+
+.icon {
+  width: 46px;
+}
+
+.photo {
+  width: 100vw;
+}

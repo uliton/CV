@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 15px;
+
+  &__logo {
+    transition: all 500ms;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #F9F9F9;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      text-shadow: 0 0 2px;
+    }
+  }
+}
