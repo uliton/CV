@@ -1,9 +1,11 @@
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  padding: 10px 15px;
+  height: $headerHeight;
+  padding: 0 16px;
+  gap: 12px;
 
   &__logo {
     transition: all 500ms;
@@ -23,6 +25,41 @@
     &:hover {
       cursor: pointer;
       text-shadow: 0 0 2px;
+    }
+  }
+}
+
+.nav {
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $mainLightColor;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 14px;
+  }
+
+  &__item {
+    transition: all 500ms;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $mainLightColor;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      text-shadow: 0 0 1px;
+      transform: scale(1.01);
     }
   }
 }

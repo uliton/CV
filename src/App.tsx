@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
-import { Footer } from "./components/Footer";
 import { NotFound } from "./components/NotFound";
 // import { Introduce } from "./components/Introduce";
 // import { Portfolio } from "./components/Portfolio";
@@ -23,7 +22,5 @@ export const App: React.FC = () => (
       <Route path="/contacts" element={<Contacts />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-
-    <Footer /> 
   </div>
 );

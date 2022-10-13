@@ -18,6 +18,7 @@ export const Contacts = () => {
         <a
           href="tel:+380930002600"
           className="link"
+          title="Phone"
         >
           <img src={phone} alt="phone" className="icon" />
         </a>
@@ -25,6 +26,7 @@ export const Contacts = () => {
         <a
           href="mailto:al.haruca@gmail.com"
           className="link"
+          title="Mail"
         >
           <img src={email} alt="email" className="icon" />
         </a>
@@ -34,6 +36,7 @@ export const Contacts = () => {
           className="link"
           target="_blank"
           rel="noreferrer"
+          title="LinkedIn"
         >
           <img src={linkedin} alt="linkedin" className="icon" />
         </a>
@@ -43,6 +46,7 @@ export const Contacts = () => {
           className="link"
           target="_blank"
           rel="noreferrer"
+          title="Telegram"
         >
           <img src={telegram} alt="telegram" className="icon" />
         </a>
@@ -52,12 +56,13 @@ export const Contacts = () => {
           className="link"
           target="_blank"
           rel="noreferrer"
+          title="GitHub"
         >
           <img src={github} alt="telegram" className="icon" />
         </a>
       </div>
 
-      <img src={photo320} alt="background" className="photo" />
+      <img src={photo320} alt="background" />
     </div>
   );
 };

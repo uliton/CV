@@ -1,10 +1,12 @@
-html {
-  color: #F9F9F9;
-  background-color: #2C2C2C;
-  box-sizing: border-box;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/normolize";
 
-body {
-  margin: 0;
-  padding: 0;
-}
+@import "./components/Header/Header.scss";
+@import "./components/Contacts/Contacts.scss";
+@import "./components/Introduce/Introduce.scss";
+@import "./components/Main/Main.scss";
+@import "./components/NotFound/NotFound.scss";
+@import "./components/OtherProjects/OtherProjects.scss";
+@import "./components/Portfolio/Portfolio.scss";
