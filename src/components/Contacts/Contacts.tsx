@@ -5,7 +5,7 @@ import email from '../../images/icons/email.svg';
 import linkedin from '../../images/icons/linkedin.svg';
 import telegram from '../../images/icons/telegram.svg';
 import github from '../../images/icons/github.svg';
-import photo from '../../images/own/png/4077.png';
+import photo320 from '../../images/myself/contacts-320.png';
 
 export const Contacts = () => {
   return (
@@ -18,8 +18,6 @@ export const Contacts = () => {
         <a
           href="tel:+380930002600"
           className="link"
-          target="_blank"
-          rel="noreferrer"
         >
           <img src={phone} alt="phone" className="icon" />
         </a>
@@ -27,8 +25,6 @@ export const Contacts = () => {
         <a
           href="mailto:al.haruca@gmail.com"
           className="link"
-          target="_blank"
-          rel="noreferrer"
         >
           <img src={email} alt="email" className="icon" />
         </a>
@@ -61,7 +57,7 @@ export const Contacts = () => {
         </a>
       </div>
 
-      <img src={photo} alt="background" className="photo" />
+      <img src={photo320} alt="background" className="photo" />
     </div>
   );
 };
