@@ -18,16 +18,16 @@
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     gap: 12px;
-    margin-bottom: 20px;
-    height: 100%;
   }
 }
 
 .link {
   height: 46px;
+  margin-bottom: 4px;
 }
 
 .icon {

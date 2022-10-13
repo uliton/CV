@@ -5,6 +5,11 @@ import email from '../../images/icons/email.svg';
 import linkedin from '../../images/icons/linkedin.svg';
 import telegram from '../../images/icons/telegram.svg';
 import github from '../../images/icons/github.svg';
+import facebook from '../../images/icons/facebook.svg';
+import skype from '../../images/icons/skype.svg';
+import viber from '../../images/icons/viber.svg';
+import whatsapp from '../../images/icons/whatsapp.svg';
+import instagram from '../../images/icons/instagram.svg';
 import photo320 from '../../images/myself/contacts-320.png';
 
 export const Contacts = () => {
@@ -22,7 +27,7 @@ export const Contacts = () => {
         >
           <img src={phone} alt="phone" className="icon" />
         </a>
-        
+
         <a
           href="mailto:al.haruca@gmail.com"
           className="link"
@@ -30,7 +35,17 @@ export const Contacts = () => {
         >
           <img src={email} alt="email" className="icon" />
         </a>
-        
+
+        <a
+          href="https://join.skype.com/invite/F7I3vcdduHsv"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+          title="skype"
+        >
+          <img src={skype} alt="skype" className="icon" />
+        </a>
+
         <a
           href="https://www.linkedin.com/in/alex-haruca/"
           className="link"
@@ -40,7 +55,17 @@ export const Contacts = () => {
         >
           <img src={linkedin} alt="linkedin" className="icon" />
         </a>
-        
+
+        <a
+          href="https://www.facebook.com/a.haruca"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+          title="facebook"
+        >
+          <img src={facebook} alt="facebook" className="icon" />
+        </a>
+
         <a
           href="https://t.me/a_haruca"
           className="link"
@@ -50,7 +75,37 @@ export const Contacts = () => {
         >
           <img src={telegram} alt="telegram" className="icon" />
         </a>
-        
+
+        <a
+          href="https://wa.me/380930002600"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+          title="whatsapp"
+        >
+          <img src={whatsapp} alt="whatsapp" className="icon" />
+        </a>
+
+        <a
+          href="https://msng.link/o/?380930002600=vi"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+          title="viber"
+        >
+          <img src={viber} alt="viber" className="icon" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/x3m_"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+          title="instagram"
+        >
+          <img src={instagram} alt="instagram" className="icon" />
+        </a>
+
         <a
           href="https://github.com/uliton"
           className="link"
@@ -60,9 +115,10 @@ export const Contacts = () => {
         >
           <img src={github} alt="telegram" className="icon" />
         </a>
+
+        <img src={photo320} alt="background" />
       </div>
 
-      <img src={photo320} alt="background" />
     </div>
   );
 };
