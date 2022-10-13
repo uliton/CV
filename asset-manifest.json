@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.f909af4d.chunk.css",
-    "main.js": "./static/js/main.b52f79fa.chunk.js",
-    "main.js.map": "./static/js/main.b52f79fa.chunk.js.map",
+    "main.js": "./static/js/main.ae61a864.chunk.js",
+    "main.js.map": "./static/js/main.ae61a864.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d44cfba7.js",
     "runtime-main.js.map": "./static/js/runtime-main.d44cfba7.js.map",
     "static/js/2.aa6f37ad.chunk.js": "./static/js/2.aa6f37ad.chunk.js",
@@ -17,7 +17,6 @@
     "static/media/instagram.9e447800.svg": "./static/media/instagram.9e447800.svg",
     "static/media/linkedin.5a70e2f6.svg": "./static/media/linkedin.5a70e2f6.svg",
     "static/media/App.scss": "./static/media/main-320.862719e3.png",
-    "static/media/phone.dc8d17fd.svg": "./static/media/phone.dc8d17fd.svg",
     "static/media/skype.3f5ddcc3.svg": "./static/media/skype.3f5ddcc3.svg",
     "static/media/telegram.ab19435a.svg": "./static/media/telegram.ab19435a.svg",
     "static/media/viber.ff085a13.svg": "./static/media/viber.ff085a13.svg",
@@ -27,6 +26,6 @@
     "static/js/runtime-main.d44cfba7.js",
     "static/js/2.aa6f37ad.chunk.js",
     "static/css/main.f909af4d.chunk.css",
-    "static/js/main.b52f79fa.chunk.js"
+    "static/js/main.ae61a864.chunk.js"
   ]
 }
