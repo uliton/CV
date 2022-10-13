@@ -20,7 +20,7 @@ export const App: React.FC = () => (
       {/* <Route path="/introduce" element={<Introduce />} /> */}
       {/* <Route path="/portfolio" element={<Portfolio />} /> */}
       <Route path="/contacts" element={<Contacts />} />
-      <Route path="*" element={<NotFound />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
   </div>
 );

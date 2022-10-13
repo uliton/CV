@@ -13,6 +13,8 @@ import instagram from './icons/instagram.svg';
 import photo320 from './images/contacts-320.png';
 
 export const Contacts = () => {
+  const root = window.location.origin;
+
   return (
     <div className="contacts">
       <p className="contacts__preview-text">
@@ -25,7 +27,7 @@ export const Contacts = () => {
           className="link"
           title="Phone"
         >
-          <img src={phone} alt="phone" className="icon" />
+          <img src={`${root}/icons/phone.svg`} alt="phone" className="icon" />
         </a>
 
         <a
