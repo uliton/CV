@@ -13,7 +13,7 @@ import instagram from './icons/instagram.svg';
 import photo320 from './images/contacts-320.png';
 
 export const Contacts = () => {
-  const phone = 'https://github.com/uliton/CV/blob/main/src/components/Contacts/icons/phone.svg';
+  const phone = 'https://raw.githubusercontent.com/uliton/CV/35d8b5665ba0248445e5d0003c50ee86ffae2a25/src/components/Contacts/icons/phone.svg';
 
   return (
     <div className="contacts">
