@@ -3,6 +3,9 @@ import React from "react";
 export const Main: React.FC = () => (
   <div className="main">
     <p className="main__text">
+      Unfortunately the page is not ready yet.
+    </p>
+    <p className="main__text">
       You can
       {' '}
       <a

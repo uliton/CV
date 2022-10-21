@@ -12,15 +12,20 @@ export const Header = () => (
     <nav className="header__nav nav">
       <ul className="nav__list">
         <li className="nav__item">
+          <Link to='/' className="nav__link">
+            main
+          </Link>
+        </li>
+        {/* <li className="nav__item">
           <Link to='/introduce' className="nav__link">
             introduce
           </Link>
-        </li>
-        <li className="nav__item">
+        </li> */}
+        {/* <li className="nav__item">
           <Link to='/portfolio' className="nav__link">
             portfollio
           </Link>
-        </li>
+        </li> */}
         <li className="nav__item">
           <Link to='/contacts' className="nav__link">
             contacts
