@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.f909af4d.chunk.css",
-    "main.js": "./static/js/main.8f964812.chunk.js",
-    "main.js.map": "./static/js/main.8f964812.chunk.js.map",
+    "main.css": "./static/css/main.cc6ed83d.chunk.css",
+    "main.js": "./static/js/main.8d87eeb3.chunk.js",
+    "main.js.map": "./static/js/main.8d87eeb3.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d44cfba7.js",
     "runtime-main.js.map": "./static/js/runtime-main.d44cfba7.js.map",
-    "static/js/2.75a458ef.chunk.js": "./static/js/2.75a458ef.chunk.js",
-    "static/js/2.75a458ef.chunk.js.map": "./static/js/2.75a458ef.chunk.js.map",
+    "static/js/2.dddbb067.chunk.js": "./static/js/2.dddbb067.chunk.js",
+    "static/js/2.dddbb067.chunk.js.map": "./static/js/2.dddbb067.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.f909af4d.chunk.css.map": "./static/css/main.f909af4d.chunk.css.map",
-    "static/js/2.75a458ef.chunk.js.LICENSE.txt": "./static/js/2.75a458ef.chunk.js.LICENSE.txt",
+    "static/css/main.cc6ed83d.chunk.css.map": "./static/css/main.cc6ed83d.chunk.css.map",
+    "static/js/2.dddbb067.chunk.js.LICENSE.txt": "./static/js/2.dddbb067.chunk.js.LICENSE.txt",
     "static/media/contacts-320.2635ef7e.png": "./static/media/contacts-320.2635ef7e.png",
     "static/media/email.f260c85a.svg": "./static/media/email.f260c85a.svg",
     "static/media/facebook.6a578dbb.svg": "./static/media/facebook.6a578dbb.svg",
     "static/media/github.00d7610d.svg": "./static/media/github.00d7610d.svg",
     "static/media/instagram.9e447800.svg": "./static/media/instagram.9e447800.svg",
     "static/media/linkedin.5a70e2f6.svg": "./static/media/linkedin.5a70e2f6.svg",
-    "static/media/App.scss": "./static/media/main-320.862719e3.png",
+    "static/media/phone.dc8d17fd.svg": "./static/media/phone.dc8d17fd.svg",
     "static/media/skype.3f5ddcc3.svg": "./static/media/skype.3f5ddcc3.svg",
     "static/media/telegram.ab19435a.svg": "./static/media/telegram.ab19435a.svg",
     "static/media/viber.ff085a13.svg": "./static/media/viber.ff085a13.svg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d44cfba7.js",
-    "static/js/2.75a458ef.chunk.js",
-    "static/css/main.f909af4d.chunk.css",
-    "static/js/main.8f964812.chunk.js"
+    "static/js/2.dddbb067.chunk.js",
+    "static/css/main.cc6ed83d.chunk.css",
+    "static/js/main.8d87eeb3.chunk.js"
   ]
 }
