@@ -1,6 +1,6 @@
 import React from "react";
 import './Contacts.scss';
-// import phone from './icons/phone.svg';
+import phone from './icons/phone.svg';
 import email from './icons/email.svg';
 import linkedin from './icons/linkedin.svg';
 import telegram from './icons/telegram.svg';
@@ -11,10 +11,9 @@ import viber from './icons/viber.svg';
 import whatsapp from './icons/whatsapp.svg';
 import instagram from './icons/instagram.svg';
 import photo320 from './images/contacts-320.png';
+// import { ONLINE_ORDERS_MOCK } from "../../mockData";
 
 export const Contacts = () => {
-  const phone = 'https://raw.githubusercontent.com/uliton/CV/35d8b5665ba0248445e5d0003c50ee86ffae2a25/src/components/Contacts/icons/phone.svg';
-
   return (
     <div className="contacts">
       <p className="contacts__preview-text">
@@ -34,6 +33,8 @@ export const Contacts = () => {
           href="mailto:al.haruca@gmail.com"
           className="link"
           title="Mail"
+          target="_blank"
+          rel="noreferrer"
         >
           <img src={email} alt="email" className="icon" />
         </a>
@@ -41,9 +42,9 @@ export const Contacts = () => {
         <a
           href="https://join.skype.com/invite/F7I3vcdduHsv"
           className="link"
+          title="skype"
           target="_blank"
           rel="noreferrer"
-          title="skype"
         >
           <img src={skype} alt="skype" className="icon" />
         </a>
@@ -117,10 +118,10 @@ export const Contacts = () => {
         >
           <img src={github} alt="telegram" className="icon" />
         </a>
-
-        <img src={photo320} alt="background" />
       </div>
 
+        <img src={photo320} alt="background" />
+        <div className="contacts__image"></div>
     </div>
   );
 };

@@ -1,5 +1,47 @@
+@import '../../utils/variables';
+
 .introduce {
+  margin: auto;
   color: #fff;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  max-width: 320px;
+}
+
+.intro {
+  margin-bottom: 4px;
+
+  &__photo {
+    width: 50%;
+    float: right;
+  }
+
+  &__text {
+    font-size: 9px;
+
+    &::before {
+      content: '';
+      margin-left: 15px;
+    }
+  }
+}
+
+.bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: $mainLightColor;
+  padding: 0 6px;
+
+  &__button {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px 0;
+    width: max-content;
+    border: none;
+    color: $mainDarkColor;
+    background-color: $mainLightColor;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

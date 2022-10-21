@@ -8,10 +8,8 @@ import { NotFound } from "./components/NotFound";
 import { Contacts } from "./components/Contacts";
 // import { OtherProjects } from "./components/OtherProjects";
 
-import './App.scss';
-
 export const App: React.FC = () => (
-  <div>
+  <div className="app">
     <Header />
 
     <Routes>
@@ -20,7 +18,7 @@ export const App: React.FC = () => (
       {/* <Route path="/introduce" element={<Introduce />} /> */}
       {/* <Route path="/portfolio" element={<Portfolio />} /> */}
       <Route path="/contacts" element={<Contacts />} />
-      {/* <Route path="*" element={<NotFound />} /> */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </div>
 );

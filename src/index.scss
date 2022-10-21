@@ -1,0 +1,13 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/normolize";
+
+@import "./App.scss";
+@import "./components/Header/Header.scss";
+@import "./components/Contacts/Contacts.scss";
+@import "./components/Introduce/Introduce.scss";
+@import "./components/Main/Main.scss";
+@import "./components/NotFound/NotFound.scss";
+@import "./components/OtherProjects/OtherProjects.scss";
+@import "./components/Portfolio/Portfolio.scss";
