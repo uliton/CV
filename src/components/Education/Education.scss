@@ -1,0 +1,23 @@
+.education {
+  padding: 4px;
+
+  &__list {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+
+  &__item {
+    font-size: 9px;
+  }
+}
+
+.item {
+  // margin-bottom: 2px;
+
+  // &__text {
+  //   &::before {
+  //     content: "- ";
+  //     margin-left: 4px;
+  //   }
+  // }
+}

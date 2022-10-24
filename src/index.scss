@@ -2,12 +2,19 @@
 @import "./utils/mixins";
 @import "./utils/reset";
 @import "./utils/normolize";
+@import "./utils/container";
 
 @import "./App.scss";
 @import "./components/Header/Header.scss";
-@import "./components/Contacts/Contacts.scss";
-@import "./components/Introduce/Introduce.scss";
 @import "./components/Main/Main.scss";
-@import "./components/NotFound/NotFound.scss";
+@import "./components/Introduce/Introduce.scss";
+@import "./components/Skills/Skills.scss";
+@import "./components/Education/Education.scss";
+@import "./components/SelfEducation/SelfEducation.scss";
+@import "./components/Experience/Experience.scss";
+@import "./components/Sport/Sport.scss";
 @import "./components/OtherProjects/OtherProjects.scss";
 @import "./components/Portfolio/Portfolio.scss";
+@import "./components/Contacts/Contacts.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/NotFound/NotFound.scss";

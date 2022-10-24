@@ -1,8 +1,13 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: $footerHeight;
-  padding: 0 15px;
   color: $mainLightColor;
+  text-align: center;
+  background-color: $mainDarkElement;
+  box-shadow: 0 0 8px $mainDarkShadow;
+  font-weight: 100;
+  font-size: 12px;
+
+  &__text {
+    margin: auto;
+    padding: 8px 0;
+  }
 }

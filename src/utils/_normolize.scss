@@ -1,8 +1,12 @@
+@import '../fonts/font-family.scss';
+
 * {
   box-sizing: border-box;
 }
 
 html {
+  font-family: Gilroy;
+  font-weight: 300;
   color: $mainLightColor;
   background-color: $mainDarkColor;
 }

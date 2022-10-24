@@ -1,13 +1,18 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: $headerHeight;
-  padding: 0 16px;
-  gap: 12px;
+  
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $mainDarkElement;
+    box-shadow: 0 0 8px $mainDarkShadow;
+  }
 
   &__logo {
+    text-align: center;
+    padding: 8px 0;
     transition: all 500ms;
 
     &:hover {
@@ -19,7 +24,7 @@
     text-decoration: none;
     font-size: 28px;
     letter-spacing: 2px;
-    color: #F9F9F9;
+    color: inherit;
     transition: all 500ms;
 
     &:hover {
@@ -30,9 +35,10 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: center;
   font-size: 16px;
   padding-bottom: 4px;
-  border-bottom: 1px solid $mainLightColor;
 
   &__list {
     display: flex;
@@ -53,7 +59,7 @@
   &__link {
     text-transform: uppercase;
     text-decoration: none;
-    color: $mainLightColor;
+    color: inherit;
     transition: all 500ms;
 
     &:hover {

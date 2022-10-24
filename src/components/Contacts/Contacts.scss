@@ -1,28 +1,20 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-  height: calc(100vh - 80px);
-  max-width: 320px;
-  max-height: 600px;
-  margin: auto;
+  margin: 0 auto auto;
 
   &__preview-text {
-    margin: 0 24px;
-    padding: 45px 35px;
     text-align: center;
     line-height: 150%;
     font-size: 20px;
     letter-spacing: 1px;
+    margin: 100px auto;
+    width: 250px;
   }
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 46px);
     justify-content: center;
-    align-items: flex-end;
-    gap: 12px;
+    gap: 16px;
   }
 }
 
@@ -33,4 +25,5 @@
 
 .icon {
   width: 46px;
+  
 }

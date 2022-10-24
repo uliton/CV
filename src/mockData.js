@@ -1,8 +1,6 @@
 export const ONLINE_ORDERS_MOCK = [
   {
-    id: 1,
     section: 'skills',
-    title: 'skills',
     content: [
       {
         id: 1,
@@ -36,13 +34,12 @@ export const ONLINE_ORDERS_MOCK = [
       },
       {
         id: 7,
-        title: 'Basic OOP understanding',
-        body: [],
+        title: '',
+        body: ['Basic OOP understanding'],
       }
     ],
   },
   {
-    id: 2,
     section: 'contacts',
     section_text: 'You always can easily connect with me!',
     content: [
@@ -64,7 +61,7 @@ export const ONLINE_ORDERS_MOCK = [
       {
         id: 4,
         title: 'LinkedIn',
-        body: 'linkedin.com/in/alex-haruca',
+        body: 'https://www.linkedin.com/in/alex-haruca/',
       },
       {
         id: 5,
@@ -74,7 +71,7 @@ export const ONLINE_ORDERS_MOCK = [
       {
         id: 6,
         title: 'Telegram',
-        body: '@a_haruca',
+        body: 'https://t.me/a_haruca',
       },
       {
         id: 7,
@@ -94,14 +91,12 @@ export const ONLINE_ORDERS_MOCK = [
       {
         id: 10,
         title: 'GitHub',
-        body: 'github.com/uliton',
+        body: 'https://github.com/uliton',
       }
     ],
   },
   {
-    id: 3,
     section: 'education',
-    title: 'education',
     content: [
       {
         id: 1,
@@ -118,9 +113,7 @@ export const ONLINE_ORDERS_MOCK = [
     ],
   },
   {
-    id: 4,
     section: 'portfollio',
-    title: 'portfollio',
     content: [
       {
         id: 1,
@@ -155,9 +148,7 @@ export const ONLINE_ORDERS_MOCK = [
     ],
   },
   {
-    id: 5,
     section: 'introduce',
-    title: 'introduce',
     content: [
       {
         id: 1,
@@ -172,9 +163,7 @@ export const ONLINE_ORDERS_MOCK = [
     ],
   },
   {
-    id: 6,
     section: 'self_education',
-    title: 'self education',
     content: [
       {
         id: 1,
@@ -202,14 +191,12 @@ export const ONLINE_ORDERS_MOCK = [
       },
       {
         id: 7,
-        body: 'mui.com/',
+        body: 'mui.com',
       }
     ],
   },
   {
-    id: 7,
-    section: 'other_experience',
-    title: 'other experience',
+    section: 'experience',
     content: [
       {
         id: 1,
@@ -289,7 +276,8 @@ export const ONLINE_ORDERS_MOCK = [
       },
       {
         id: 5,
-        title: '',
+        title: 'Marketing manager at IT-startup ALGATA (2006 - 2007)',
+        subtitle: 'It was an IT startup.',
         body: {
           results: {
             title: 'List of significant results and impact',
@@ -309,9 +297,7 @@ export const ONLINE_ORDERS_MOCK = [
     ],
   },
   {
-    id: 8,
     section: 'sport',
-    title: 'sport',
     content: [
       {
         id: 1,

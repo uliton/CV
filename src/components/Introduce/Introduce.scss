@@ -1,17 +1,32 @@
-@import '../../utils/variables';
-
 .introduce {
-  margin: auto;
-  color: #fff;
-  max-width: 320px;
+  margin: 0 auto auto;
+  // margin-bottom: auto;
+
+  &__intro {
+    margin-bottom: 4px;
+    padding: 4px;
+    text-align: justify;
+  }
+
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $mainLightColor;
+    margin-bottom: 4px;
+  }
+
+  &__component {
+    margin-bottom: 12px;
+
+  }
 }
 
 .intro {
-  margin-bottom: 4px;
-
   &__photo {
-    width: 50%;
+    width: 170px;
     float: right;
+    border-radius: 4px;
+    margin-left: 4px;
   }
 
   &__text {
@@ -25,16 +40,11 @@
 }
 
 .bar {
-  display: flex;
-  justify-content: space-around;
-  background-color: $mainLightColor;
-  padding: 0 6px;
-
   &__button {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 6px 0;
+    padding: 6px 10px;
     width: max-content;
     border: none;
     color: $mainDarkColor;
@@ -43,5 +53,49 @@
     &:hover {
       cursor: pointer;
     }
+
+    &--active {
+      color: $mainLightColor;
+      background-color: $mainDarkElement;
+      border: 1px solid $mainLightColor;
+    }
+  }
+}
+
+.item {
+  margin-bottom: 2px;
+  text-align: justify;
+
+  &__title {
+    display: inline;
+    font-weight: 600;
+  }
+
+  &__text {
+    &::before {
+      content: "- ";
+      margin-left: 4px;
+    }
+  }
+
+  &__content {
+    &::before {
+      content: "";
+      margin-left: 4px;
+    }
+
+    &--exception {
+      margin-left: 0;
+    }
+  }
+}
+
+.sub {
+  &__list {
+    margin-bottom: 2px;
+  }
+
+  &__item {
+    margin-left: 12px;
   }
 }

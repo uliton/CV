@@ -1,5 +1,5 @@
 @mixin on375 {
-  @media (min-width: 375px) {
+  @media (min-width: 370px) {
     @content;
   }
 }
