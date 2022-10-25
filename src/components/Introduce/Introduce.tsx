@@ -8,8 +8,8 @@ import { Sport } from "../Sport";
 
 export const Introduce = () => {
   const buttons = ['skills', 'education', 'experience', 'sport'];
-  const [component, setComponent] = useState(<Experience />);
-  const [button, setButton] = useState<string>('experience');
+  const [component, setComponent] = useState(<Skills />);
+  const [button, setButton] = useState<string>('skills');
 
   const handleClick = (e: any) => {
     switch (e.target.value) {

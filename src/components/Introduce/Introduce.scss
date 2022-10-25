@@ -1,18 +1,26 @@
 .introduce {
   margin: 0 auto auto;
-  // margin-bottom: auto;
 
   &__intro {
     margin-bottom: 4px;
     padding: 4px;
     text-align: justify;
+
+    @include on375 {
+      padding: 4px 6px ;
+      // gap: 24px;
+    }
   }
 
   &__bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: $mainLightColor;
     margin-bottom: 4px;
+
+    // @include on375 {
+    //   justify-content: space-between;
+    // }
   }
 
   &__component {
@@ -23,14 +31,22 @@
 
 .intro {
   &__photo {
-    width: 170px;
+    width: 160px;
     float: right;
     border-radius: 4px;
     margin-left: 4px;
+    
+    @include on375 {
+      width: 190px;
+    }
   }
 
   &__text {
-    font-size: 9px;
+    // font-size: 10px;
+
+    // @include on375 {
+    //   font-size: 10px;
+    // }
 
     &::before {
       content: '';
@@ -46,11 +62,14 @@
     font-weight: bold;
     padding: 6px 8px;
     width: max-content;
-    // border: none;
     border: 1px solid $mainLightColor;
     color: $mainDarkColor;
     background-color: $mainLightColor;
     outline: none;
+
+    @include on375 {
+      padding: 6px 16px;
+    }
 
     &:hover {
       cursor: pointer;
