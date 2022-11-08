@@ -6,10 +6,10 @@
     padding: 4px;
     text-align: justify;
 
-    @include on375 {
-      padding: 4px 6px ;
-      // gap: 24px;
-    }
+    // @include on375 {
+    //   padding: 4px 6px ;
+    //   // gap: 24px;
+    // }
   }
 
   &__bar {
@@ -36,9 +36,9 @@
     border-radius: 4px;
     margin-left: 4px;
     
-    @include on375 {
-      width: 190px;
-    }
+    // @include on375 {
+    //   width: 190px;
+    // }
   }
 
   &__text {
@@ -56,6 +56,11 @@
 }
 
 .bar {
+  position: sticky;
+  top: $headerHeight;
+  left: 0;
+  right: 0;
+
   &__button {
     font-size: 12px;
     text-transform: uppercase;
@@ -67,9 +72,9 @@
     background-color: $mainLightColor;
     outline: none;
 
-    @include on375 {
-      padding: 6px 16px;
-    }
+    // @include on375 {
+    //   padding: 6px 10px;
+    // }
 
     &:hover {
       cursor: pointer;
