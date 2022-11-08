@@ -1,32 +1,31 @@
 {
   "files": {
-    "main.css": "./static/css/main.a3d3662e.chunk.css",
-    "main.js": "./static/js/main.7b2d0d87.chunk.js",
-    "main.js.map": "./static/js/main.7b2d0d87.chunk.js.map",
+    "main.css": "./static/css/main.197ec86d.chunk.css",
+    "main.js": "./static/js/main.e1e25727.chunk.js",
+    "main.js.map": "./static/js/main.e1e25727.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d44cfba7.js",
     "runtime-main.js.map": "./static/js/runtime-main.d44cfba7.js.map",
-    "static/js/2.32c2bd64.chunk.js": "./static/js/2.32c2bd64.chunk.js",
-    "static/js/2.32c2bd64.chunk.js.map": "./static/js/2.32c2bd64.chunk.js.map",
+    "static/js/2.e9ebb28c.chunk.js": "./static/js/2.e9ebb28c.chunk.js",
+    "static/js/2.e9ebb28c.chunk.js.map": "./static/js/2.e9ebb28c.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.a3d3662e.chunk.css.map": "./static/css/main.a3d3662e.chunk.css.map",
-    "static/js/2.32c2bd64.chunk.js.LICENSE.txt": "./static/js/2.32c2bd64.chunk.js.LICENSE.txt",
+    "static/css/main.197ec86d.chunk.css.map": "./static/css/main.197ec86d.chunk.css.map",
+    "static/js/2.e9ebb28c.chunk.js.LICENSE.txt": "./static/js/2.e9ebb28c.chunk.js.LICENSE.txt",
     "static/media/index.scss": "./static/media/Gilroy-UltraLightItalic.87f0acd4.ttf",
-    "static/media/email.f260c85a.svg": "./static/media/email.f260c85a.svg",
-    "static/media/facebook.6a578dbb.svg": "./static/media/facebook.6a578dbb.svg",
-    "static/media/github.00d7610d.svg": "./static/media/github.00d7610d.svg",
-    "static/media/instagram.9e447800.svg": "./static/media/instagram.9e447800.svg",
-    "static/media/intro-320.94389117.jpg": "./static/media/intro-320.94389117.jpg",
-    "static/media/linkedin.5a70e2f6.svg": "./static/media/linkedin.5a70e2f6.svg",
-    "static/media/phone.dc8d17fd.svg": "./static/media/phone.dc8d17fd.svg",
-    "static/media/skype.3f5ddcc3.svg": "./static/media/skype.3f5ddcc3.svg",
-    "static/media/telegram.ab19435a.svg": "./static/media/telegram.ab19435a.svg",
-    "static/media/viber.ff085a13.svg": "./static/media/viber.ff085a13.svg",
-    "static/media/whatsapp.927e9d23.svg": "./static/media/whatsapp.927e9d23.svg"
+    "static/media/email.54760b46.svg": "./static/media/email.54760b46.svg",
+    "static/media/facebook.4bdc5260.svg": "./static/media/facebook.4bdc5260.svg",
+    "static/media/github.36206398.svg": "./static/media/github.36206398.svg",
+    "static/media/instagram.0debd8a3.svg": "./static/media/instagram.0debd8a3.svg",
+    "static/media/linkedin.46cdde19.svg": "./static/media/linkedin.46cdde19.svg",
+    "static/media/phone.d745490b.svg": "./static/media/phone.d745490b.svg",
+    "static/media/skype.50b37a9b.svg": "./static/media/skype.50b37a9b.svg",
+    "static/media/telegram.a356d61f.svg": "./static/media/telegram.a356d61f.svg",
+    "static/media/viber.a6090d42.svg": "./static/media/viber.a6090d42.svg",
+    "static/media/whatsapp.dbdc2900.svg": "./static/media/whatsapp.dbdc2900.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d44cfba7.js",
-    "static/js/2.32c2bd64.chunk.js",
-    "static/css/main.a3d3662e.chunk.css",
-    "static/js/main.7b2d0d87.chunk.js"
+    "static/js/2.e9ebb28c.chunk.js",
+    "static/css/main.197ec86d.chunk.css",
+    "static/js/main.e1e25727.chunk.js"
   ]
 }
