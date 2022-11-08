@@ -18,11 +18,11 @@ export const Header = () => (
                 main
               </Link>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link to='/introduce' className="nav__link">
                 introduce
               </Link>
-            </li>
+            </li> */}
             {/* <li className="nav__item">
               <Link to='/portfolio' className="nav__link">
                 portfollio
