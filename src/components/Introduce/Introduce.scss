@@ -5,11 +5,6 @@
     margin-bottom: 4px;
     padding: 4px;
     text-align: justify;
-
-    // @include on375 {
-    //   padding: 4px 6px ;
-    //   // gap: 24px;
-    // }
   }
 
   &__bar {
@@ -17,10 +12,6 @@
     justify-content: space-between;
     background-color: $mainLightColor;
     margin-bottom: 4px;
-
-    // @include on375 {
-    //   justify-content: space-between;
-    // }
   }
 
   &__component {
@@ -35,18 +26,10 @@
     float: right;
     border-radius: 4px;
     margin-left: 4px;
-    
-    // @include on375 {
-    //   width: 190px;
-    // }
   }
 
   &__text {
     // font-size: 10px;
-
-    // @include on375 {
-    //   font-size: 10px;
-    // }
 
     &::before {
       content: '';
@@ -71,10 +54,6 @@
     color: $mainDarkColor;
     background-color: $mainLightColor;
     outline: none;
-
-    // @include on375 {
-    //   padding: 6px 10px;
-    // }
 
     &:hover {
       cursor: pointer;
