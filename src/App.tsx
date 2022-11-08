@@ -7,6 +7,7 @@ import { Introduce } from "./components/Introduce";
 // import { Portfolio } from "./components/Portfolio";
 import { Contacts } from "./components/Contacts";
 import { Footer } from "./components/Footer";
+import { Tests } from "./components/Tests";
 // import { OtherProjects } from "./components/OtherProjects";
 
 export const App: React.FC = () => (
@@ -19,6 +20,7 @@ export const App: React.FC = () => (
       <Route path="/introduce" element={<Introduce />} />
       {/* <Route path="/portfolio" element={<Portfolio />} /> */}
       <Route path="/contacts" element={<Contacts />} />
+      <Route path="/tests" element={<Tests />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 
