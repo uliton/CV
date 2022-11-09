@@ -33,9 +33,9 @@ export const Main: React.FC = () => (
       <p className="main__text">
         Other info coming soon.
       </p>
-      <p className="main__text">
+      {/* <p className="main__text">
         P.S. Introduce was added
-      </p>
+      </p> */}
     </div>
   </div>
 );
