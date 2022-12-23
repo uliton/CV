@@ -2,7 +2,7 @@ import React from "react";
 import phone from '../../images/icons/phone.svg';
 import email from '../../images/icons/email.svg';
 import linkedin from '../../images/icons/linkedin.svg';
-import telegram from '../../images/icons/telegram.svg';
+import telegram from '../../images/icons/telegram1.svg';
 import github from '../../images/icons/github.svg';
 import facebook from '../../images/icons/facebook.svg';
 import skype from '../../images/icons/skype.svg';
@@ -17,6 +17,9 @@ export const Contacts = () => {
   // console.log(contacts);
 
   return (
+  <div className="snow_wrap">
+    <div className="snow"></div>
+
     <div className="contacts">
       <div className="container">
         <p className="contacts__preview-text">
@@ -124,5 +127,6 @@ export const Contacts = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
