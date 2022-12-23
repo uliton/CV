@@ -3,13 +3,14 @@
   color: $lightTextColor;
   
   &__wrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: $headerHeight;
     background-color: $greenBackgroundColor;
     box-shadow: 0 0 8px $mainDarkShadow;
+    z-index: 1;
   }
 
   &__logo {

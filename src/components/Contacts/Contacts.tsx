@@ -20,8 +20,8 @@ export const Contacts = () => {
   <div className="snow_wrap">
     <div className="snow"></div>
 
-    <div className="contacts">
-      <div className="container">
+    <div className="container">
+      <div className="contacts">
         <p className="contacts__preview-text">
           You always can easily connect with me!
         </p>

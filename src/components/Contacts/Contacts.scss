@@ -1,4 +1,7 @@
 .contacts {
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: 0 auto auto;
 
   &__preview-text {
@@ -25,5 +28,4 @@
 
 .icon {
   width: 46px;
-  
 }

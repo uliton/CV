@@ -4,8 +4,8 @@ export const Main: React.FC = () => (
   <div className="snow_wrap">
     <div className="snow"></div>
 
-    <div className="main">
-      <div className="container">
+    <div className="container">
+      <div className="main">
         <p className="main__text">
           Unfortunately the page is not ready yet.
         </p>
