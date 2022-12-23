@@ -1,15 +1,16 @@
 .main {
   text-align: center;
-  margin: auto;
+  margin: 200px auto;
 
   &__text {
     font-size: 16px;
     margin-bottom: 30px;
+    font-weight: 500;
   }
 
   &__link {
-    color: #EE8251;
-    font-weight: 400;
+    color: #cb0058;
+    font-weight: 700;
 
     &:hover {
       cursor: pointer;
