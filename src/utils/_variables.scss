@@ -1,6 +1,8 @@
 // height
 $headerHeight: 80px;
 $footerHeight: $headerHeight / 2;
+// IMPORTANT!   calc  all - header - footer
+$contentHeight: calc(100vh - 80px - 40px);
 
 
 // colors

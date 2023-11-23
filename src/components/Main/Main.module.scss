@@ -1,14 +1,7 @@
 @import '../../utils/variables';
 
 .main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  // width: 100%;
-  // min-height: 100vh;
+  min-height: $contentHeight;
 
   &--winter {}
   &--spring {}
@@ -19,9 +12,16 @@
 .link {
   text-decoration: none;
   font-weight: 700;
+  transition: all 500ms;
+  user-select: none;
 
   &--winter {
     color: $winterRed;
+    
+    &:focus {
+      outline: 1px ridge $winterTextColor;
+      border-radius: 1px;
+    }
   }
   &--spring {}
   &--summer {}
@@ -29,16 +29,22 @@
 }
 
 .content {
+  position: absolute;
+  top: $headerHeight;
+  left: 0;
+  right: 0;
+  bottom: $footerHeight;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: 100vh;
   padding: $headerHeight 0 $footerHeight;
 }
 
 .text {
   font-size: 16px;
   font-weight: 300;
+  user-select: none;
 }

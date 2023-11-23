@@ -1,10 +1,10 @@
 @import '../../utils/variables';
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // position: sticky;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
   height: $footerHeight;
   line-height: $footerHeight;
   text-align: center;
