@@ -11,7 +11,7 @@ export const NotFound: React.FC<Props> = () => {
 
   return (
     <div className={classNames(getCurrentClassNames(style, 'notFound', season))}>
-      Page Not Found!
+      Page Not Found!!!
     </div>
   );
 };
