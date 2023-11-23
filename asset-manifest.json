@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6b257220.css",
+    "main.js": "./static/js/main.65c9589a.js",
+    "static/media/Gilroy-UltraLightItalic.ttf": "./static/media/Gilroy-UltraLightItalic.87f0acd42b27a5408e0b.ttf",
+    "static/media/Gilroy-ThinItalic.ttf": "./static/media/Gilroy-ThinItalic.930dc405dc78cc97a766.ttf",
+    "static/media/Gilroy-LightItalic.ttf": "./static/media/Gilroy-LightItalic.6d1bb712a33e4d603f27.ttf",
+    "static/media/Gilroy-RegularItalic.ttf": "./static/media/Gilroy-RegularItalic.aada5f763052a8db57fe.ttf",
+    "static/media/Gilroy-MediumItalic.ttf": "./static/media/Gilroy-MediumItalic.32e71bba19919e8e0618.ttf",
+    "static/media/Gilroy-SemiBoldItalic.ttf": "./static/media/Gilroy-SemiBoldItalic.1024cf519c52eb8c377f.ttf",
+    "static/media/Gilroy-BoldItalic.ttf": "./static/media/Gilroy-BoldItalic.ef735bce11cfbb759540.ttf",
+    "static/media/Gilroy-Thin.ttf": "./static/media/Gilroy-Thin.28f856b7c4b3d473e0d1.ttf",
+    "static/media/Gilroy-UltraLight.ttf": "./static/media/Gilroy-UltraLight.768c44ec57dc827381b3.ttf",
+    "static/media/Gilroy-Light.ttf": "./static/media/Gilroy-Light.1822a291dd62fe2cca72.ttf",
+    "static/media/Gilroy-ExtraBoldItalic.ttf": "./static/media/Gilroy-ExtraBoldItalic.33f2985b2a89eeb1008b.ttf",
+    "static/media/Gilroy-Regular.ttf": "./static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-Medium.ttf": "./static/media/Gilroy-Medium.1b4da6582f83f45ea039.ttf",
+    "static/media/Gilroy-SemiBold.ttf": "./static/media/Gilroy-SemiBold.07b9100a72fe7d46d20a.ttf",
+    "static/media/Gilroy-BlackItalic.ttf": "./static/media/Gilroy-BlackItalic.166365ebe89db575a0c1.ttf",
+    "static/media/Gilroy-Bold.ttf": "./static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
+    "static/media/Gilroy-HeavyItalic.ttf": "./static/media/Gilroy-HeavyItalic.e03ca91e292d53be084a.ttf",
+    "static/media/Gilroy-ExtraBold.ttf": "./static/media/Gilroy-ExtraBold.59a66eb8c577778daaa5.ttf",
+    "static/media/Gilroy-Black.ttf": "./static/media/Gilroy-Black.3566c87fe5eaaa7052d5.ttf",
+    "static/media/Gilroy-Heavy.ttf": "./static/media/Gilroy-Heavy.41ca3e2d8c1dc7d3cde9.ttf",
+    "static/media/bg.jpeg": "./static/media/bg.ebefd87aa2ebbd937eab.jpeg",
+    "static/media/email.svg": "./static/media/email.b85b8714bacd8bd1612a452718ebdd53.svg",
+    "static/media/github.svg": "./static/media/github.5f33fe7e057f612c8173f6e9f3fa4946.svg",
+    "static/media/linkedin.svg": "./static/media/linkedin.f94168669a309db66c222264a040d087.svg",
+    "static/media/telegram.svg": "./static/media/telegram.e3d3399f7ad692f73755965c283764cb.svg",
+    "index.html": "./index.html",
+    "main.6b257220.css.map": "./static/css/main.6b257220.css.map",
+    "main.65c9589a.js.map": "./static/js/main.65c9589a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b257220.css",
+    "static/js/main.65c9589a.js"
+  ]
+}
