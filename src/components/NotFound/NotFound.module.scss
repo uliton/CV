@@ -1,0 +1,17 @@
+@import '../../utils/variables';
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 36px;
+  font-weight: 500;
+
+  &--winter {
+    color: $winterRed;
+  }
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+}

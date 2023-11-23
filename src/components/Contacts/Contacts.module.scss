@@ -1,0 +1,42 @@
+@import '../../utils/variables';
+
+.contacts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+}
+
+.title {
+  text-align: center;
+  line-height: 150%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 250px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 46px);
+  justify-content: center;
+  gap: 16px;
+}
+
+.link {
+  border-radius: 50%;
+}
+
+.icon {
+  width: 46px;
+  border-radius: 50%;
+}

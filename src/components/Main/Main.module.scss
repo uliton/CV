@@ -1,0 +1,44 @@
+@import '../../utils/variables';
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  // width: 100%;
+  // min-height: 100vh;
+
+  &--winter {}
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+
+  &--winter {
+    color: $winterRed;
+  }
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  padding: $headerHeight 0 $footerHeight;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+}

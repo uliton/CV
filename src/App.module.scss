@@ -1,0 +1,79 @@
+@import './utils/variables';
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+
+  &--winter {
+    background: url(./styles/winter/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    color: $winterTextColor;
+    background-color: $winterBgColor;
+  }
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+}
+
+//#region winter
+.snow, .snow::after, .snow::before {
+  content: "";
+  position: absolute;
+  top: -650px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image:
+  radial-gradient(4px 4px at 80px 50px, #fff, transparent),
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+  radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+
+  radial-gradient(4px 4px at 480px 350px, #fff, transparent),
+  radial-gradient(6px 6px at 620px 100px, #fff, transparent),
+  radial-gradient(3px 3px at 60px 200px, #fff, transparent),
+  
+  radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+  radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+  background-size: 650px 650px;
+
+  animation: snowAnim 3s linear infinite;
+}
+
+.snow::after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+
+.snow::before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-direction: reverse;
+  animation-duration: 9s;
+}
+
+@keyframes snowAnim {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(650px);
+  }
+}
+//#endregion

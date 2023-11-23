@@ -1,0 +1,73 @@
+@import '../../utils/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: $headerHeight;
+  box-shadow: 0 0 8px $mainDarkShadow;
+  padding: 10px;
+
+  &--winter {
+    background-color: $winterBgColor;
+  }
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+}
+
+.link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: all 500ms;
+
+  &--winter {
+    color: $winterTextColor;
+
+    &:active {
+      color: $winterRed;
+    }
+  }
+  &--spring {}
+  &--summer {}
+  &--autumn {}
+  
+  &:hover {
+    text-shadow: 0 0 1px;
+    transform: scale(1.01);
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 14px;
+}
+
+.item {
+  list-style: none;
+  transition: all 500ms;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
