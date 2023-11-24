@@ -6,7 +6,7 @@ import { Header } from './components/Header';
 import { Main } from './components/Main';
 import { Footer } from './components/Footer';
 
-import { Season, getCurrentClassNames } from './styles/styles';
+import { Season, getCurrentClassNames, setMetaThemeColor } from './styles/styles';
 import { Context, getCurrentSeason } from './context/season';
 import style from './App.module.scss';
 import { NotFound } from './components/NotFound';
@@ -17,7 +17,12 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     getCurrentSeason(setSeason);
+
+    // Оновлюємо колір у метатегу при зміні сезону
+    setMetaThemeColor(season);
   }, [season]);
+
+  console.log(style['app--winter'])
 
   return (
     <Context.Provider value={season}>
