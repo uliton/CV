@@ -7,9 +7,10 @@
 }
 
 .app {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  z-index: 1;
+  // z-index: 1;
 
   &--winter {
     background: url(./styles/winter/bg.jpeg);

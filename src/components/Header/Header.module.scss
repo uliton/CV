@@ -5,13 +5,13 @@
   top: 0;
   // left: 0;
   // right: 0;
-  z-index: 2;
+  z-index: 3;
   height: $headerHeight;
   box-shadow: 0 0 8px $mainDarkShadow;
   padding: 10px;
 
+  background-color: $winterBgColor;
   &--winter {
-    background-color: $winterBgColor;
   }
   &--spring {}
   &--summer {}
