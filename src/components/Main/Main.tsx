@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import classNames from 'classnames';
 
 import { Context } from '../../context/season';
@@ -11,10 +11,34 @@ type Props = {}
 export const Main: React.FC<Props> = () => {
   const season = useContext(Context);
 
+  const [themeColor, setThemeColor] = useState<string>('#3498db')
+  useEffect(() => {
+    // Оновлюємо метатег при зміні стану themeColor
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', themeColor);
+    }
+  }, [themeColor]);
+  const handleColorChange = () => {
+    const newColor = '#ff5733';
+    setThemeColor(newColor);
+  }
+
   return (
     <main className={classNames(getCurrentClassNames(style, 'main', season))}>
       <div className="container">
         <div className={style.content}>
+
+          <button
+          style={{
+            padding: '20px',
+            backgroundColor: themeColor,
+          }}
+            onClick={handleColorChange}
+          >
+            change
+          </button>
+
           <p className={style.text}>
             Unfortunately the page is not ready yet.
           </p>
