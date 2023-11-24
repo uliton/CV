@@ -44,6 +44,6 @@ const seasonVariables = {
 export const setMetaThemeColor = (season: Season) => {
   const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (metaThemeColor) {
-      metaThemeColor.setAttribute('content', seasonVariables[season].color);
+      metaThemeColor.setAttribute('content', seasonVariables[season].bgColor);
     }
 }
