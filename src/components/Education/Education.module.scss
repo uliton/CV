@@ -1,0 +1,24 @@
+@import '../../utils/variables';
+
+.education {
+  line-height: 140%;
+  user-select: none;
+  padding: 0 8px 12px;
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 8px;
+}
+
+.text {
+  padding-bottom: 8px;
+
+  &::before {
+    content: "- ";
+    margin-left: 12px;
+  }
+}

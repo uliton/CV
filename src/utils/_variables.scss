@@ -1,8 +1,9 @@
 // height
 $headerHeight: 80px;
 $footerHeight: $headerHeight / 2;
-// IMPORTANT!   calc  all - header - footer
-$contentHeight: calc(100vh - 80px - 40px);
+// IMPORTANT!   calc  all - footer
+$contentHeight: calc(100vh - 40px);
+$buttonBar: 56px;
 
 
 // colors

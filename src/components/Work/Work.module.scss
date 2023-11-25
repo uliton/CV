@@ -1,8 +1,8 @@
 @import '../../utils/variables';
 
-.main {
+.work {
   position: relative;
-  height: max-content;
+  min-height: $contentHeight;
   padding-top: $headerHeight + $buttonBar; // header
   user-select: none;
   padding-left: 16px;
@@ -19,11 +19,12 @@
 }
 
 .button-bar {
+  // position: sticky; // not work
   position: fixed;
   top: $headerHeight;
   width: 288px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   padding: 3px 2px 2px;
@@ -55,47 +56,4 @@
     color: $winterTextColor;
     background-color: $mainDarkElement;
   }
-}
-
-
-.link {
-  // text-decoration: none;
-  // font-weight: 700;
-  // transition: all 500ms;
-  // user-select: none;
-
-  // &--winter {
-  //   color: $winterRed;
-    
-  //   &:focus {
-  //     outline: 1px ridge $winterTextColor;
-  //     border-radius: 1px;
-  //   }
-  // }
-  // &--spring {}
-  // &--summer {}
-  // &--autumn {}
-}
-
-.content {
-  // position: absolute;
-  // top: $headerHeight;
-  // left: 0;
-  // right: 0;
-  // bottom: $footerHeight;
-  // z-index: 1;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // gap: 20px;
-  // padding: $headerHeight 0 $footerHeight;
-  // overflow: auto;
-  
-}
-
-.text {
-  // font-size: 16px;
-  // font-weight: 300;
-  // user-select: none;
 }

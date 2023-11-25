@@ -11,6 +11,7 @@ import { Context, getCurrentSeason } from './context/season';
 import style from './App.module.scss';
 import { NotFound } from './components/NotFound';
 import { Contacts } from './components/Contacts';
+import { Work } from './components/Work';
 
 export const App: React.FC = () => {
   const [season, setSeason] = useState<Season>(Season.winter);
@@ -21,8 +22,6 @@ export const App: React.FC = () => {
     // Оновлюємо колір у метатегу при зміні сезону
     setMetaThemeColor(season);
   }, [season]);
-
-  console.log(style['app--winter'])
 
   return (
     <Context.Provider value={season}>
@@ -37,10 +36,14 @@ export const App: React.FC = () => {
 
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/introduce' element={<Main />} />
+          <Route path='/work' element={<Work />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='*' element={<NotFound />} />
+          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+
         </Routes>
+
+        <div style={{height: '24px'}}></div>
 
         <Footer />
       </div>

@@ -1,0 +1,25 @@
+.introduce {
+  text-align: justify;
+  padding: 0 8px 12px;
+  line-height: 140%;
+  user-select: none;
+}
+
+.photo {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  float: right;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.text {
+  padding-bottom: 8px;
+
+  &:before {
+    content: '';
+    margin-left: 12px;
+  }
+}

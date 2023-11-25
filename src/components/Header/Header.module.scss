@@ -1,10 +1,10 @@
 @import '../../utils/variables';
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  // left: 0;
-  // right: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
   height: $headerHeight;
   box-shadow: 0 0 8px $mainDarkShadow;
@@ -29,10 +29,10 @@
   &--winter {
     color: $winterTextColor;
     
-    &:focus {
-      outline: 1px ridge $winterTextColor;
-      border-radius: 1px;
-    }
+    // &:focus {
+    //   outline: 1px ridge $winterTextColor;
+    //   border-radius: 1px;
+    // }
     &:active {
       color: $winterRed;
     }

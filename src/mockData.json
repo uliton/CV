@@ -1,16 +1,10 @@
 {
   "name": "Oleksandr Kharutsa",
-  "nav": [
-    {
-      "title": "main",
-      "link": "/"},
-    {
-      "title": "introduce",
-      "link": "/introduce"},
-    {
-      "title": "contacts",
-      "link": "/contacts"}
-  ],
+  "nav": {
+    "main": "/",
+    "work": "/work",
+    "contacts": "/contacts"
+  },
   "position": "Front-end developer",
   "about": [
     "Graduated from the Kyiv National Economic University and received a diploma in enterprise strategy and consulting. Had taken part in the student exchange program and studied in the UK.",
@@ -150,7 +144,7 @@
     {
       "id": 5,
       "title": "Marketing manager at IT-startup ALGATA (2006 - 2007)",
-      "subtitle": "It was an IT startup.",
+      "body": "It was an IT startup.",
       "results": {
         "title": "List of significant results and impact",
         "content": [

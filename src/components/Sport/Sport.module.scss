@@ -1,0 +1,20 @@
+.sport {
+  line-height: 140%;
+  padding: 0 8px 12px;
+  user-select: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 8px;
+}
+
+.text {
+  &::before {
+    content: "- ";
+    margin-left: 12px;
+  }
+}

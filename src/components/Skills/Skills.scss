@@ -1,0 +1,22 @@
+.skills {
+  padding: 4px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    // font-size: 9px;
+  }
+}
+
+.item {
+  display: flex;
+  // margin-bottom: 2px;
+
+  &__title {
+    // font-weight: 600;
+    width: max-content;
+    // margin-right: 4px;/
+  }
+}

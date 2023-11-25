@@ -2,7 +2,7 @@
 
 interface Mock {
   name: string,
-  nav: Link[],
+  nav: Nav,
   position: string,
   about: string[],
   skills: Skill[],
@@ -14,9 +14,10 @@ interface Mock {
   contacts: Contacts,
 };
 
-interface Link {
-  title: string,
-  link: string,
+interface Nav {
+  main: string,
+  work: string,
+  contacts: string,
 }
 
 interface Skill {
@@ -28,7 +29,6 @@ interface Skill {
 interface Work {
   id: number,
   title: string,
-  subtitle?: string,
   body?: string,
   results?: WorkRes,
   response?: WorkRes,
