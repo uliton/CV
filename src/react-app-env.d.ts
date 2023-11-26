@@ -32,7 +32,7 @@ interface Work {
   body?: string,
   results?: WorkRes,
   response?: WorkRes,
-  technologies?: string,
+  technologies?: WorkRes,
 };
 
 interface WorkRes {

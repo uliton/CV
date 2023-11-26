@@ -1,5 +1,5 @@
 {
-  "name": "Oleksandr Kharutsa",
+  "name": "Oleksandr Haruca",
   "nav": {
     "main": "/",
     "work": "/work",
@@ -8,44 +8,39 @@
   "position": "Front-end developer",
   "about": [
     "Graduated from the Kyiv National Economic University and received a diploma in enterprise strategy and consulting. Had taken part in the student exchange program and studied in the UK.",
-    "I have a lot of experience in different industries. Auto services, sales, operational management, agricultural sector, private enterprise. All this experience has helped me achieve many cool projects with good results. I\"m sure it will help me find a common language within a team and find solutions in difficult situations. I also know how to look at the business as a whole, so that it gives me the opportunity to offer complex solutions.",
-    "I have over 500 hours of coding and my main stack consists of React, JavaScript, HTML and CSS. And I\"m also open to learning Vue, React Native, Angular and any other technology."
+    "I have a lot of experience in different industries. Auto services, sales, operational management, agricultural sector, private enterprise. All this experience has helped me achieve many cool projects with good results. I'm sure it will help me find a common language within a team and find solutions in difficult situations. I also know how to look at the business as a whole, so that it gives me the opportunity to offer complex solutions.",
+    "I have over 2000 hours of coding and my main stack consists of React, JavaScript, HTML and CSS. And I'm also open to learning Vue, React Native, Angular and any other technology."
   ],
   "skills": [
     {
       "id": 1,
-      "title": "Front End languages",
-      "body": ["JavaScript", "TypeScript", "React", "Redux", "Sass(SCSS)", "CSS3", "HTML5", "Git", "REST API"]
+      "title": "Working with",
+      "body": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Git", "NPM", "ESLint", "Sass(SCSS)", "Redux", "REST API", "SQL", "classNames", "localeStorage", "Routing", "SVG", "JSON"]
     },
     {
       "id": 2,
       "title": "Frameworks",
-      "body": ["Bulma", "Bootstrap", "Material Ui"]
+      "body": ["Material Ui", "Bootstrap", "Bulma"]
     },
     {
       "id": 3,
-      "title": "Task and Project Management",
-      "body": ["Trello", "Slack"]
+      "title": "Tools",
+      "body": ["AWS", "Figma", "Trello", "Slack"]
     },
     {
       "id": 4,
-      "title": "Tools",
-      "body": ["Photoshop", "Figma", "NPM", "Eslint"]
-    },
-    {
-      "id": 5,
       "title": "Methodologies",
       "body": ["BEM"]
     },
     {
-      "id": 6,
-      "title": "Operating systems",
-      "body": ["MacOs"]
+      "id": 5,
+      "title": "English level",
+      "body": ["Intermediate"]
     },
     {
-      "id": 7,
-      "title": "",
-      "body": ["Basic OOP understanding"]
+      "id": 6,
+      "title": "Basic OOP understanding",
+      "body": []
     }
   ],
   "education": [
@@ -54,95 +49,19 @@
     "Passed 3-months English summer school in Great Britain in 2002."
   ],
   "self_education": [
+    "Mate Academy",
     "developer.mozilla.org",
+    "stackoverflow.com",
     "w3schools.com",
-    "reactjs.org",
-    "redux.js.org",
-    "bulma.io",
-    "getbootstrap.com",
-    "mui.com"
+    "reactjs.org"
   ],
   "sport": [
     "Candidate Master of Sports in short distance swimming",
-    "Professionally engaged in auto-sports from 2003 to 2012. Karting, drag racing, drifting"
+    "Professionally engaged in auto-sports from 2003 to 2012. Karting, drag racing, drifting."
   ],
   "experience": [
     {
       "id": 1,
-      "title": "Frontend developer (12.2021 - present)",
-      "body": "Development on React, JavaScript, Typescript, Redux, HTML, CSS. Most of my projects are on GitHub"
-    },
-
-    {
-      "id": 2,
-      "title": "Marketing & Project manager at Agro business with \"SUPERHERO\" (2016 - 11.2022)",
-
-      "results": {
-        "title": "List of significant results and impact",
-        "content": [
-          "before the war we had +400 unique retail customers",
-          "experienced in exporting products to the European Union",
-          "experienced in certification of organic products in the European Union and according to Canadian quality standards"
-        ]
-      },
-      "response": {
-        "title": "List of responsibilities:",
-        "content": [
-          "search and work with the client, and search for alternative distribution channels",
-          "development of agro-technology and technological map for the season for each of the crops grown",
-          "development of promotional materials, packaging, branding, logistics"
-        ]
-      },
-      "technologies": "the use of not only traditional agro-technologies, but also new technologies, such as hydroponic, aeroponic, flooding technology, low-volume technology..."
-    },
-
-    {
-      "id": 3,
-      "title": "Project manager at Retail businesses (2012 - 2016)",
-      "results": {
-        "title": "List of significant results and impact",
-        "content": [
-          "retail network increased",
-          "сash flow increased"
-        ]
-      },
-      "response": {
-        "title": "List of responsibilities:",
-        "content": [
-          "work with suppliers",
-          "accounting"
-        ]
-      },
-      "technologies": "preparation and approval of permits"
-    },
-    
-    {
-      "id": 4,
-      "title": "Project & Event manager at Auto business with LINEYКА (2010 - 2012), RED LINE (2009 - 2010)",
-      "results": {
-        "title": "List of significant results and impact",
-        "content": [
-          "building racing cars for champions in different disciplines",
-          "development of motorsport culture in Ukraine",
-          "organization of championships in different disciplines (karting, drag-racing, drifting)",
-          "organization of international events with the participation of foreign pilots"
-        ]
-      },
-      "response": {
-        "title": "List of responsibilities:",
-        "content": [
-          "communication with clients",
-          "search for the necessary parts for the construction of racing cars",
-          "organization of sports events (planning, PR, implementation, report)",
-          "work with event partners",
-          "organization of security at the event (ambulance, fire, police)",
-          "coordination with local government"
-        ]
-      }
-    },
-    
-    {
-      "id": 5,
       "title": "Marketing manager at IT-startup ALGATA (2006 - 2007)",
       "body": "It was an IT startup.",
       "results": {
@@ -156,9 +75,88 @@
         "content": [
           "to develop commercial offers for potential customers and advertisers"
         ]
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "Project & Event manager at Auto business with LINEYКА (2010 - 2012), RED LINE (2009 - 2010)",
+      "results": {
+        "title": "List of significant results and impact",
+        "content": [
+          "building racing cars for champions in different disciplines",
+          "development of motorsport culture in Ukraine",
+          "organization of championships in different disciplines (karting, drag-racing, drifting)",
+          "organization of international events with the participation of foreign pilots"
+        ]
       },
-      "technologies": "It was an IT startup."
+      "response": {
+        "title": "List of responsibilities:",
+        "content": [
+          "search for the necessary parts for the construction of racing cars",
+          "organization of sports events (planning, PR, implementation, report)",
+          "organization of security at the event (ambulance, fire, police)",
+          "coordination with local government"
+        ]
+      }
+    },
+
+    {
+      "id": 3,
+      "title": "Project manager at Retail businesses (2012 - 2016)",
+      "results": {
+        "title": "List of significant results and impact",
+        "content": [
+          "retail network increased"
+        ]
+      },
+      "response": {
+        "title": "List of responsibilities:",
+        "content": [
+          "work with suppliers",
+          "accounting"
+        ]
+      }
+    },
+
+    {
+      "id": 4,
+      "title": "Marketing & Project manager at Agro business with \"SUPERHERO\" (2016 - 11.2021)",
+
+      "results": {
+        "title": "List of significant results and impact:",
+        "content": [
+          "experienced in exporting products to the European Union",
+          "experienced in certification of organic products in the European Union and according to Canadian quality standards"
+        ]
+      },
+      "response": {
+        "title": "List of responsibilities:",
+        "content": [
+          "development of agro-technology and technological map for the season for each of the crops grown",
+          "development of promotional materials, packaging, branding, logistics"
+        ]
+      },
+      "technologies": {
+        "title": "Technologies:",
+        "content": [
+          "the use of not only traditional agro-technologies, but also new technologies, such as hydroponic, aeroponic, flooding technology, low-volume technology..."
+        ]
+      }
+    },
+
+    {
+      "id": 5,
+      "title": "Front-end studding (2021 - 2022)",
+      "body": "Graduate from Mate Academy Front-end course in summer of 2022. It takes near 6 month of full time learning. Made more than 50 pet projects."
+    },
+    
+    {
+      "id": 6,
+      "title": "Front-end developer (2022 - present)",
+      "body": "Since the summer of 2022 I have been working as a freelancer. Completed simple, single tasks. And also made some interesting projects using different technologies."
     }
+
   ],
  "portfolio": [
       {
@@ -175,21 +173,75 @@
       },
       {
         "id": 3,
-        "title": "Add User form",
-        "link": "https://uliton.github.io/abz_test_task/",
-        "technologies": ["React", "Hooks", "Grid", "Material UI", "REST Api"]
-      },
-      {
-        "id": 4,
-        "title": "Recursion list",
-        "link": "https://uliton.github.io/cubex_test_task",
+        "title": "Recursive list",
+        "link": "https://uliton.github.io/recursive_list/",
         "technologies": ["localStorage"]
       },
       {
+        "id": 4,
+        "title": "Users form",
+        "link": "https://uliton.github.io/users_form/",
+        "technologies": ["React", "Hooks", "Grid", "Material UI", "REST Api"]
+      },
+      {
         "id": 5,
-        "title": "Pre Dictionary",
-        "link": "https://uliton.github.io/Pre_Dictionary",
+        "title": "Currency Converter",
+        "link": "https://uliton.github.io/currency_converter/",
+        "technologies": ["JS", "React", "debounce", "REST Api"]
+      },
+      {
+        "id": 6,
+        "title": "Personal App with a list of companies that are hiring junior IT specialists",
+        "link": "https://uliton.github.io/job_for_jun/",
+        "technologies": ["JS", "TS", "React", "REST Api", "localeStorage"]
+      },
+      {
+        "id": 7,
+        "title": "Users posts",
+        "link": "https://uliton.github.io/users_posts/",
+        "technologies": ["JS", "TS", "React", "REST Api"]
+      },
+      {
+        "id": 8,
+        "title": "Dictionary",
+        "link": "https://uliton.github.io/dictionary/",
         "technologies": ["React", "Redux", "Hooks", "localeStorage"]
+      },
+      {
+        "id": 9,
+        "title": "Countries",
+        "link": "https://uliton.github.io/countries/",
+        "technologies": ["JS", "TS", "React", "Redux", "Hooks", "REST Api", "SASS", "classNames"]
+      },
+      {
+        "id": 10,
+        "title": "Freelance project",
+        "link": "https://uliton.github.io/GR_shipping/",
+        "technologies": ["JS", "React", "Hooks", "SASS", "classNames"]
+      },
+      {
+        "id": 11,
+        "title": "Personal website where I collect video evidence of Russian occupiers",
+        "link": "https://okupant.online/",
+        "technologies": ["JS", "React", "Hooks", "SASS", "classNames", "Routing"]
+      },
+      {
+        "id": 12,
+        "title": "Ideas calendar",
+        "link": "https://uliton.github.io/ideas_calendar/",
+        "technologies": ["JS", "React", "Hooks", "SASS", "classNames"]
+      },
+      {
+        "id": 13,
+        "title": "USA Map",
+        "link": "https://uliton.github.io/usa_map/",
+        "technologies": ["JS", "TS", "React", "JSON", "SVG", "SASS"]
+      },
+      {
+        "id": 14,
+        "title": "Union Stone",
+        "link": "https://uliton.github.io/union/",
+        "technologies": ["JS", "React", "JSON", "SVG", "SASS", "Hooks", "classNames", "Routing", "Flex", "Grid"]
       }
     ],
   "contacts": [

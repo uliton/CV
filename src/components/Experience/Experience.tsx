@@ -5,7 +5,7 @@ import style from './Experience.module.scss';
 type Props = {}
 
 export const Experience: React.FC<Props> = () => {
-  const experienceText: Work[] = MOCK.experience;
+  const experienceText: Work[] = [...MOCK.experience].reverse();
 
   return (
     <div className={style.experience}>
@@ -16,9 +16,11 @@ export const Experience: React.FC<Props> = () => {
               {work.title}
             </p>
             
-            <p className={style.experience__body}>
-              {work.body || ''}
-            </p>
+            {work.body && (
+              <p className={style.experience__body}>
+                {work.body}
+              </p>
+            )}
             
             {/* results */}
             {work.results && (
@@ -46,6 +48,23 @@ export const Experience: React.FC<Props> = () => {
 
                 <ul className={style.content__list}>
                   {work.response.content.map((text, i) => (
+                    <li key={i} className={style.content__item}>
+                      {text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* technologies */}
+            {work.technologies && (
+              <div className={style.content}>
+                <p className={style.content__title}>
+                  {work.technologies.title}
+                </p>
+
+                <ul className={style.content__list}>
+                  {work.technologies.content.map((text, i) => (
                     <li key={i} className={style.content__item}>
                       {text}
                     </li>

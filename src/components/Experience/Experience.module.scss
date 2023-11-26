@@ -35,11 +35,11 @@
   &__body {
     font-weight: 400;
     font-size: 13px;
-
+    margin-bottom: 8px;
 
     &::before {
       content: "";
-      margin-left: 12px;
+      margin-left: 8px;
     }
   }
 }
