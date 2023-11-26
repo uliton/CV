@@ -4,14 +4,14 @@ import { Route, Routes } from 'react-router';
 
 import { Header } from './components/Header';
 import { Main } from './components/Main';
-import { Footer } from './components/Footer';
-
-import { Season, getCurrentClassNames, setMetaThemeColor } from './styles/styles';
-import { Context, getCurrentSeason } from './context/season';
-import style from './App.module.scss';
-import { NotFound } from './components/NotFound';
-import { Contacts } from './components/Contacts';
 import { Work } from './components/Work';
+import { Contacts } from './components/Contacts';
+import { Footer } from './components/Footer';
+import { NotFound } from './components/NotFound';
+
+import { Context, getCurrentSeason } from './context/season';
+import { Season, getCurrentClassNames, setMetaThemeColor } from './styles/styles';
+import style from './App.module.scss';
 
 export const App: React.FC = () => {
   const [season, setSeason] = useState<Season>(Season.winter);
@@ -26,11 +26,13 @@ export const App: React.FC = () => {
   return (
     <Context.Provider value={season}>
       <div className={classNames(getCurrentClassNames(style, 'app', season))}>
-        <div>
-          {season === Season.winter && (
-            <div className={style.snow}></div>
-          )}
-        </div>
+        {season === Season.winter && (
+          <div>
+            {season === Season.winter && (
+              <div className={style.snow}></div>
+            )}
+          </div>
+        )}
 
         <Header />
 
@@ -39,8 +41,6 @@ export const App: React.FC = () => {
           <Route path='/work' element={<Work />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='*' element={<NotFound />} />
-          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-
         </Routes>
 
         <div style={{height: '24px'}}></div>

@@ -1,0 +1,60 @@
+@import '../../utils/variables';
+
+.portfolio {
+  line-height: 140%;
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted $winterTextColor;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.project {
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+
+     &::before {
+      content: "- ";
+    }
+  }
+  &__link {
+    display: block;
+    width: max-content;
+    color: $winterTextColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 8px;
+    transition: all 500ms;
+
+    &:hover {
+      color: $winterRed;
+      text-shadow: 0 0 1px;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.technologies {
+  display: flex;
+  gap: 24px;
+
+  &__list {
+    margin-bottom: 12px;
+  }
+  &__item {
+    margin-bottom: 2px;
+  }
+}

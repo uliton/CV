@@ -2,11 +2,12 @@
 
 .work {
   position: relative;
-  min-height: $contentHeight;
+  width: 100%;
+  height: max-content;
   padding-top: $headerHeight + $buttonBar; // header
-  user-select: none;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 12px;
 
   &--winter {
     background-color: $winterBgColor;
@@ -19,10 +20,9 @@
 }
 
 .button-bar {
-  // position: sticky; // not work
   position: fixed;
   top: $headerHeight;
-  width: 288px;
+  width: 264px;
   display: flex;
   justify-content: space-around;
   border-bottom-right-radius: 6px;

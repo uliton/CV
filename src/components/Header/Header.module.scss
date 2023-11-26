@@ -10,8 +10,8 @@
   box-shadow: 0 0 8px $mainDarkShadow;
   padding: 10px;
 
-  background-color: $winterBgColor;
   &--winter {
+    background-color: $winterBgColor;
   }
   &--spring {}
   &--summer {}
@@ -24,15 +24,10 @@
   margin: 0 auto;
   text-decoration: none;
   transition: all 500ms;
-  user-select: none;
 
   &--winter {
     color: $winterTextColor;
-    
-    // &:focus {
-    //   outline: 1px ridge $winterTextColor;
-    //   border-radius: 1px;
-    // }
+
     &:active {
       color: $winterRed;
     }
@@ -42,6 +37,7 @@
   &--autumn {}
   
   &:hover {
+    color: $winterRed;
     text-shadow: 0 0 1px;
     transform: scale(1.01);
   }

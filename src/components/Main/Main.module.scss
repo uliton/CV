@@ -2,11 +2,12 @@
 
 .main {
   position: relative;
+  width: 100%;
   height: max-content;
   padding-top: $headerHeight + $buttonBar; // header
-  user-select: none;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 12px;
 
   &--winter {
     background-color: $winterBgColor;
@@ -21,7 +22,7 @@
 .button-bar {
   position: fixed;
   top: $headerHeight;
-  width: 288px;
+  width: 264px;
   display: flex;
   justify-content: space-between;
   border-bottom-right-radius: 6px;
@@ -42,7 +43,7 @@
   background-color: $winterTextColor;
   border-radius: 4px;
   transition: all 150ms;
-  
+
   &:focus, &:active {
     outline: 1px solid $mainDarkColor;
   }

@@ -17,8 +17,8 @@ export const Work: React.FC<Props> = () => {
   const season = useContext(Context);
 
   const buttons = Object.values(Categories);
-  const [component, setComponent] = useState(<Experience />);
-  const [button, setButton] = useState<string>(Categories.experience);
+  const [component, setComponent] = useState(<Portfolio />);
+  const [button, setButton] = useState<string>(Categories.portfolio);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement> | any) => {
     switch (event.target.value) {
       case Categories.portfolio:

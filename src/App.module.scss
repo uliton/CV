@@ -10,10 +10,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  // width: 100%;
   min-height: 100vh;
-  // z-index: 1;
 
   &--winter {
     background: url(./styles/winter/bg.jpeg);

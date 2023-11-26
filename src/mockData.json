@@ -164,31 +164,31 @@
       {
         "id": 1,
         "title": "Landing MIAMI",
-        "link": "uliton.github.io/miami-landing/",
+        "link": "https://uliton.github.io/miami-landing/",
         "technologies": ["HTML", "BEM", "CSS", "Flex"]
       },
       {
         "id": 2,
         "title": "Landing BAKERY",
-        "link": "uliton.github.io/bakery-landing/",
+        "link": "https://uliton.github.io/bakery-landing/",
         "technologies": ["HTML", "BEM", "CSS", "Grid"]
       },
       {
         "id": 3,
         "title": "Add User form",
-        "link": "uliton.github.io/abz_test_task/",
+        "link": "https://uliton.github.io/abz_test_task/",
         "technologies": ["React", "Hooks", "Grid", "Material UI", "REST Api"]
       },
       {
         "id": 4,
         "title": "Recursion list",
-        "link": "uliton.github.io/cubex_test_task",
+        "link": "https://uliton.github.io/cubex_test_task",
         "technologies": ["localStorage"]
       },
       {
         "id": 5,
         "title": "Pre Dictionary",
-        "link": "uliton.github.io/Pre_Dictionary",
+        "link": "https://uliton.github.io/Pre_Dictionary",
         "technologies": ["React", "Redux", "Hooks", "localeStorage"]
       }
     ],
