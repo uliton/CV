@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.81d54095.css",
-    "main.js": "./static/js/main.a75a21b5.js",
+    "main.css": "./static/css/main.7de200ac.css",
+    "main.js": "./static/js/main.88e40fe2.js",
     "static/media/Gilroy-UltraLightItalic.ttf": "./static/media/Gilroy-UltraLightItalic.87f0acd42b27a5408e0b.ttf",
     "static/media/Gilroy-ThinItalic.ttf": "./static/media/Gilroy-ThinItalic.930dc405dc78cc97a766.ttf",
     "static/media/Gilroy-LightItalic.ttf": "./static/media/Gilroy-LightItalic.6d1bb712a33e4d603f27.ttf",
@@ -29,11 +29,11 @@
     "static/media/linkedin.svg": "./static/media/linkedin.f94168669a309db66c222264a040d087.svg",
     "static/media/telegram.svg": "./static/media/telegram.e3d3399f7ad692f73755965c283764cb.svg",
     "index.html": "./index.html",
-    "main.81d54095.css.map": "./static/css/main.81d54095.css.map",
-    "main.a75a21b5.js.map": "./static/js/main.a75a21b5.js.map"
+    "main.7de200ac.css.map": "./static/css/main.7de200ac.css.map",
+    "main.88e40fe2.js.map": "./static/js/main.88e40fe2.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d54095.css",
-    "static/js/main.a75a21b5.js"
+    "static/css/main.7de200ac.css",
+    "static/js/main.88e40fe2.js"
   ]
 }
