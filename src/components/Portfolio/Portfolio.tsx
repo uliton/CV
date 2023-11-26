@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 type Props = {}
 
 export const Portfolio: React.FC<Props> = () => {
-  const portfolioText = MOCK.portfollio;
+  const portfolioText: Project[] = MOCK.portfolio;
 
   return (
     <div className={style.portfolio}>

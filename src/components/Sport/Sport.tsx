@@ -5,7 +5,7 @@ import style from './Sport.module.scss';
 type Props = {}
 
 export const Sport: React.FC<Props> = () => {
-  const sportText = MOCK.sport;
+  const sportText: string[] = MOCK.sport;
 
   return (
     <div className={style.sport}>

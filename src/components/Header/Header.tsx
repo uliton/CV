@@ -1,26 +1,26 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import classNames from 'classnames';
-import { Context } from '../../context/season';
-import MOCK from '../../mockData.json';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import classNames from "classnames";
+import MOCK from "../../mockData.json";
 
-import { getCurrentClassNames } from '../../styles/styles';
-import style from './Header.module.scss';
+import { Context } from "../../context/season";
+import { getCurrentClassNames } from "../../styles/functions";
+import style from "./Header.module.scss";
 
 export const Header: React.FC = () => {
   const season = useContext(Context);
   const links: Nav = MOCK.nav;
 
   return (
-    <header className={classNames(getCurrentClassNames(style, 'header', season))}>
-      <div className='container'>
+    <header
+      className={classNames(getCurrentClassNames(style, "header", season))}
+    >
+      <div className="container">
         <Link
-          to='/'
-          className={classNames(getCurrentClassNames(style, 'link', season))}
+          to="/"
+          className={classNames(getCurrentClassNames(style, "link", season))}
         >
-          <h1 className={style.title}>
-            {MOCK.name}
-          </h1>
+          <h1 className={style.title}>{MOCK.name}</h1>
         </Link>
 
         <nav className={style.nav}>
@@ -29,24 +29,17 @@ export const Header: React.FC = () => {
               <li key={i} className={style.item}>
                 <Link
                   to={path}
-                  className={classNames(getCurrentClassNames(style, 'link', season))}
+                  className={classNames(
+                    getCurrentClassNames(style, "link", season)
+                  )}
                 >
                   {name}
                 </Link>
               </li>
             ))}
-
-            {/* <li className={style.item}>
-              <Link
-                to='/portfolio'
-                className={classNames(currentStyles('link'))}
-              >
-                portfollio
-              </Link>
-            </li> */}
           </ul>
         </nav>
       </div>
     </header>
   );
-}
+};

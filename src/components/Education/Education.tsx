@@ -6,7 +6,7 @@ import style from './Education.module.scss';
 type Props = {}
 
 export const Education: React.FC<Props> = () => {
-  const educationText = MOCK.education;
+  const educationText: string[] = MOCK.education;
 
   return (
     <div className={style.education}>

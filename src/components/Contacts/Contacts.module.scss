@@ -29,6 +29,7 @@
 }
 
 .list {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 46px);
   justify-content: center;
@@ -61,4 +62,3 @@
     border-radius: 50%;
   }
 }
-

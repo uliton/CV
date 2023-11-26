@@ -5,7 +5,7 @@ import style from './SelfEducation.module.scss';
 type Props = {}
 
 export const SelfEducation: React.FC<Props> = () => {
-  const selfEducationText = MOCK.self_education;
+  const selfEducationText: string[] = MOCK.self_education;
 
   return (
     <div className={style.selfEducation}>

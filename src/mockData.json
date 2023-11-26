@@ -160,7 +160,7 @@
       "technologies": "It was an IT startup."
     }
   ],
- "portfollio": [
+ "portfolio": [
       {
         "id": 1,
         "title": "Landing MIAMI",
@@ -192,59 +192,26 @@
         "technologies": ["React", "Redux", "Hooks", "localeStorage"]
       }
     ],
-  "contacts": {
-    "text": "You always can easily connect with me!",
-    "contact_list": [
-      {
-        "id": 1,
-        "title": "Phone",
-        "body": "+380930002600"
-      },
-      {
-        "id": 2,
-        "title": "Mail",
-        "body": "al.haruca@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Skype",
-        "body": "https://join.skype.com/invite/F7I3vcdduHsv"
-      },
-      {
-        "id": 4,
-        "title": "linkedIn",
-        "body": "https://www.linkedin.com/in/alex-haruca/"
-      },
-      {
-        "id": 5,
-        "title": "Facebook",
-        "body": "https://www.facebook.com/a.haruca"
-      },
-      {
-        "id": 6,
-        "title": "Telegram",
-        "body": "https://t.me/a_haruca"
-      },
-      {
-        "id": 7,
-        "title": "Whatsapp",
-        "body": "https://wa.me/380930002600"
-      },
-      {
-        "id": 8,
-        "title": "Viber",
-        "body": "https://msng.link/o/?380930002600=vi"
-      },
-      {
-        "id": 9,
-        "title": "Instagram",
-        "body": "https://www.instagram.com/x3m_"
-      },
-      {
-        "id": 10,
-        "title": "GitHub",
-        "body": "https://github.com/uliton"
-      }
-    ]
-  }
+  "contacts": [
+    {
+      "id": 1,
+      "title": "Mail",
+      "link": "mailto:al.haruca@gmail.com"
+    },
+    {
+      "id": 2,
+      "title": "LinkedIn",
+      "link": "https://linkedin.com/in/alex-haruca/"
+    },
+    {
+      "id": 3,
+      "title": "Telegram",
+      "link": "https://t.me/a_haruca"
+    },
+    {
+      "id": 4,
+      "title": "GitHub",
+      "link": "https://github.com/uliton"
+    }
+  ]
 }

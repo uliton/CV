@@ -7,7 +7,7 @@ import style from './Introduce.module.scss';
 type Props = {}
 
 export const Introduce: React.FC<Props> = () => {
-  const introduceText = MOCK.about;
+  const introduceText: string[] = MOCK.about;
 
   return (
     <div className={style.introduce}>

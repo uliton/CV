@@ -10,8 +10,8 @@ interface Mock {
   self_education: string[],
   sport: string[],
   experience: Work[],
-  portfollio: Project[],
-  contacts: Contacts,
+  portfolio: Project[],
+  contacts: Contact[],
 };
 
 interface Nav {
@@ -40,15 +40,10 @@ interface WorkRes {
   content: string[],
 };
 
-interface Contacts {
-  text: string,
-  contact_list: Contact[],
-};
-
 interface Contact {
   id: number,
   title: string,
-  body: string,
+  link: string,
 };
 
 interface Project {

@@ -5,7 +5,7 @@ import style from './Experience.module.scss';
 type Props = {}
 
 export const Experience: React.FC<Props> = () => {
-  const experienceText = MOCK.experience;
+  const experienceText: Work[] = MOCK.experience;
 
   return (
     <div className={style.experience}>
