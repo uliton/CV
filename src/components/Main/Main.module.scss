@@ -5,8 +5,8 @@
   width: 100%;
   height: max-content;
   padding-top: $headerHeight + $buttonBar; // header
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 12px;
 
   &--winter {
@@ -22,7 +22,7 @@
 .button-bar {
   position: fixed;
   top: $headerHeight;
-  width: 264px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   border-bottom-right-radius: 6px;

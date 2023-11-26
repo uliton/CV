@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import classNames from "classnames";
-import { Route, Routes } from "react-router";
+import React, { useEffect, useState } from 'react';
+import classNames from 'classnames';
+import { Route, Routes } from 'react-router';
 
-import { Header } from "./components/Header";
-import { Main } from "./components/Main";
-import { Work } from "./components/Work";
-import { Contacts } from "./components/Contacts";
-import { Footer } from "./components/Footer";
-import { NotFound } from "./components/NotFound";
+import { Header } from './components/Header';
+import { Main } from './components/Main';
+import { Work } from './components/Work';
+import { Contacts } from './components/Contacts';
+import { Footer } from './components/Footer';
+import { NotFound } from './components/NotFound';
 
-import { Context, getCurrentSeason } from "./context/season";
+import { Context, getCurrentSeason } from './context/season';
 import {
   Season,
   getCurrentClassNames,
   setMetaThemeColor,
-} from "./styles/functions";
-import style from "./App.module.scss";
+} from './styles/functions';
+import style from './App.module.scss';
 
 export const App: React.FC = () => {
   const [season, setSeason] = useState<Season>(Season.winter);
@@ -29,7 +29,7 @@ export const App: React.FC = () => {
 
   return (
     <Context.Provider value={season}>
-      <div className={classNames(getCurrentClassNames(style, "app", season))}>
+      <div className={classNames(getCurrentClassNames(style, 'app', season))}>
         {season === Season.winter && (
           <div>
             {season === Season.winter && <div className={style.snow}></div>}
@@ -39,13 +39,13 @@ export const App: React.FC = () => {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path='/' element={<Main />} />
+          <Route path='/work' element={<Work />} />
+          <Route path='/contacts' element={<Contacts />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
 
-        <div style={{ height: "24px" }}></div>
+        <div style={{ height: '24px' }}></div>
 
         <Footer />
       </div>

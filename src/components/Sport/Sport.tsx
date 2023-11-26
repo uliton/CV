@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import MOCK from '../../mockData.json';
 import style from './Sport.module.scss';
 
@@ -9,10 +9,10 @@ export const Sport: React.FC<Props> = () => {
 
   return (
     <div className={style.sport}>
-      <ul className={style.list}>
+      <ul className={style.sport__list}>
         {sportText.map((text, i) => (
-          <li key={i} className={style.item}>
-            <p className={style.text}>
+          <li key={i} className={style.sport__item}>
+            <p className={style.sport__text}>
               {text}
             </p>
           </li>

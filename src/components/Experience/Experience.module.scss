@@ -2,6 +2,7 @@
 
 .experience {
   line-height: 140%;
+  padding: 0 8px;
 
   &__list {
     list-style: none;
@@ -22,15 +23,24 @@
   &__title {
     font-size: 15px;
     font-weight: 500;
+    line-height: 140%;
     margin-bottom: 12px;
     
     &::before {
       content: "- ";
+      margin-right: 8px;
     }
   }
+
   &__body {
     font-weight: 400;
     font-size: 13px;
+
+
+    &::before {
+      content: "";
+      margin-left: 12px;
+    }
   }
 }
 
@@ -40,11 +50,11 @@
   &__title {
     font-weight: 400;
     font-size: 13px;
-    margin-left: 6px;
+    margin-left: 8px;
   }
 
   &__list {
-    margin-left: 16px;
+    margin-left: 20px;
   }
 
   &__item {

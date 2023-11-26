@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import classNames from "classnames";
-import MOCK from "../../mockData.json";
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+import MOCK from '../../mockData.json';
 
-import { Context } from "../../context/season";
-import { getCurrentClassNames } from "../../styles/functions";
-import style from "./Header.module.scss";
+import { Context } from '../../context/season';
+import { getCurrentClassNames } from '../../styles/functions';
+import style from './Header.module.scss';
 
 export const Header: React.FC = () => {
   const season = useContext(Context);
@@ -13,12 +13,12 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={classNames(getCurrentClassNames(style, "header", season))}
+      className={classNames(getCurrentClassNames(style, 'header', season))}
     >
-      <div className="container">
+      <div className='container'>
         <Link
-          to="/"
-          className={classNames(getCurrentClassNames(style, "link", season))}
+          to='/'
+          className={classNames(getCurrentClassNames(style, 'link', season))}
         >
           <h1 className={style.title}>{MOCK.name}</h1>
         </Link>
@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
                 <Link
                   to={path}
                   className={classNames(
-                    getCurrentClassNames(style, "link", season)
+                    getCurrentClassNames(style, 'link', season)
                   )}
                 >
                   {name}

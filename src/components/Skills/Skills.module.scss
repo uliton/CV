@@ -1,0 +1,40 @@
+@import '../../utils/variables';
+
+.skills {
+  line-height: 140%;
+  user-select: none;
+  margin-bottom: 12px;
+  padding: 0 8px;
+
+  &__list {
+    list-style: none;
+  }
+}
+
+.skill {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    border-bottom: 1px solid $winterTextColor;
+    width: max-content;
+  }
+
+  &__content {
+    margin-left: 12px;
+
+    &::before {
+      content: '~ ';
+    }
+  }
+}

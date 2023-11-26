@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import MOCK from '../../mockData.json';
-import { SelfEducation } from "../SelfEducation";
+import { SelfEducation } from '../SelfEducation';
 import style from './Education.module.scss';
 
 type Props = {}
@@ -10,10 +10,10 @@ export const Education: React.FC<Props> = () => {
 
   return (
     <div className={style.education}>
-      <ul className={style.list}>
+      <ul className={style.education__list}>
         {educationText.map((text, i) => (
-          <li key={i} className={style.item}>
-            <p className={style.text}>
+          <li key={i} className={style.education__item}>
+            <p className={style.education__text}>
               {text}
             </p>
           </li>

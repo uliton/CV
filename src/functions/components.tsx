@@ -1,13 +1,14 @@
 import { Education } from "../components/Education";
 import { Experience } from "../components/Experience";
-import { Sport } from "../components/Sport";
+import { Skills } from "../components/Skills";
+
 import { Introduce } from "../components/Introduce";
 import { Portfolio } from "../components/Portfolio";
 
 export enum MainComponents {
   introduce = "introduce",
   education = "education",
-  sport = "sport",
+  skills = "skills",
 }
 
 export enum WorkComponents {
@@ -23,8 +24,8 @@ export const getCurrentComponent = (component: string) => {
       case MainComponents.education:
       return  <Education />
     
-      case MainComponents.sport:
-      return  <Sport />
+      case MainComponents.skills:
+      return  <Skills />
     
       case WorkComponents.experience:
       return  <Experience />

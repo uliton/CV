@@ -4,21 +4,22 @@
   line-height: 140%;
   user-select: none;
   margin-bottom: 12px;
-}
+  padding: 0 8px;
 
-.list {
-  list-style: none;
-}
+  &__list {
+    list-style: none;
+  }
 
-.item {
-  margin-bottom: 8px;
-}
+  &__item {
+    margin-bottom: 8px;
+  }
 
-.text {
-  padding-bottom: 8px;
+  &__text {
+    padding-bottom: 8px;
 
-  &::before {
-    content: "- ";
-    margin-left: 12px;
+    &::before {
+      content: "- ";
+      margin-left: 12px;
+    }
   }
 }

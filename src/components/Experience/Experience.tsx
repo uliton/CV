@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import MOCK from '../../mockData.json';
 import style from './Experience.module.scss';
 

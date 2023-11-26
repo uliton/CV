@@ -20,7 +20,7 @@ export const Portfolio: React.FC<Props> = () => {
             <Link
               to={project.link}
               className={style.project__link}
-              rel="noreferrer"
+              rel='noreferrer'
               target='_blank'
               title={project.title}
             >

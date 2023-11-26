@@ -9,14 +9,14 @@ export const SelfEducation: React.FC<Props> = () => {
 
   return (
     <div className={style.selfEducation}>
-      <p className={style.title}>
+      <p className={style.selfEducation__title}>
         Self Education
       </p>
 
-      <ul className={style.list}>
+      <ul className={style.selfEducation__list}>
         {selfEducationText.map((text, i) => (
-          <li key={i} className={style.item}>
-            <p className={style.text}>
+          <li key={i} className={style.selfEducation__item}>
+            <p className={style.selfEducation__text}>
               {text}
             </p>
           </li>

@@ -1,44 +1,30 @@
-import React from "react";
+import React from 'react';
+import MOCK from '../../mockData.json';
+import style from './Skills.module.scss';
 
-export const Skills: React.FC = () => {
+type Props = {}
+
+export const Skills: React.FC<Props> = () => {
+  const skillsText: Skill[] = MOCK.skills;
+
   return (
-    <div className="skills">
-      <ul className="skills__list">
-        <li className="skills__item item">
-          <span className="item__title">Front End languages</span>
-          <span className="item__content">JavaScript, TypeScript</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Libraries</span>
-          <span className="item__content">React</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Technologies</span>
-          <span className="item__content">Redux, Sass(SCSS), CSS3, HTML5, Git, REST API</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Frameworks</span>
-          <span className="item__content">Bulma, Bootstrap, Material Ui</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Task and Project Management</span>
-          <span className="item__content">Trello, Slack</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Tools</span>
-          <span className="item__content">Photoshop, Figma, NPM, Eslint</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Methodologies</span>
-          <span className="item__content">BEM</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__title">Operating systems</span>
-          <span className="item__content">MacOs</span>
-        </li>
-        <li className="skills__item item">
-          <span className="item__content--exception">Basic OOP understanding</span>
-        </li>
+    <div className={style.skills}>
+      <ul className={style.skills__list}>
+        {skillsText.map(skill => (
+          <li key={skill.id} className={style.skill__item}>
+            {skill.title && (
+              <div className={style.skill__title}>
+                {skill.title}
+              </div>
+            )}
+
+            {skill.body.map((text, i) => (
+              <span key={i} className={style.skill__content}>
+                {text}
+              </span>
+            ))}
+          </li>
+        ))}
       </ul>
     </div>
   );

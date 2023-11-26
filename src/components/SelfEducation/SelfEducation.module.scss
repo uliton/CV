@@ -1,28 +1,30 @@
 @import '../../utils/variables';
 
-.title {
-  font-weight: 500;
-  font-size: 14px;
-  margin: 24px 24px 8px;
-  border-bottom: 1px solid $winterTextColor;
-  width: max-content;
-}
-
-.list {
-  list-style: none;
-}
-
-.item {
-  margin-bottom: 4px;
-
-  &:last-child {
-    margin-bottom: 0;
+.selfEducation {
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 24px 24px 8px;
+    border-bottom: 1px solid $winterTextColor;
+    width: max-content;
   }
-}
 
-.text {
-  &::before {
-    content: "- ";
-    margin-left: 12px;
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 4px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    &::before {
+      content: "- ";
+      margin-left: 12px;
+    }
   }
 }
