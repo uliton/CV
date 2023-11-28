@@ -1,6 +1,7 @@
 import React from 'react';
 import MOCK from '../../mockData.json';
-import photo from './intro-320.jpg';
+// import photo from './intro-320.jpg';
+import photo from './avatar.jpg';
 
 import style from './Introduce.module.scss';
 import { Sport } from '../Sport';
