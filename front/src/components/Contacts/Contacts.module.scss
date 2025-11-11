@@ -1,0 +1,59 @@
+@import '../../utils/variables';
+
+.contacts {
+  min-height: $contentHeight;
+}
+
+.content {
+  position: absolute;
+  top: $headerHeight;
+  left: 0;
+  right: 0;
+  bottom: $footerHeight;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $lightText;
+}
+
+.title {
+  text-align: center;
+  line-height: 150%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 250px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  user-select: none;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 46px);
+  justify-content: center;
+  gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 500ms;
+  color: $red;
+
+  &:hover {
+    text-shadow: 0 0 1px;
+  }
+}
+
+.icon-link {
+  border-radius: 50%;
+  user-select: none;
+
+  &__icon {
+    width: 46px;
+    border-radius: 50%;
+  }
+}

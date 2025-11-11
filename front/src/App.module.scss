@@ -1,0 +1,29 @@
+@import './utils/variables';
+
+.app {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  min-height: 100dvh;
+  color: $lightText;
+
+	&--winter {
+		background: url(./styles/winter/bg.jpeg);
+	}
+	&--spring {
+		background: url(./styles/spring/bg.png);
+	}
+	&--summer {
+		background: url(./styles/summer/bg.png);
+	}
+	&--autumn {
+		background: url(./styles/autumn/bg.png);
+	}
+  
+  background-size: cover;
+  background-position: center;
+}
+
+//#region
+//#endregion

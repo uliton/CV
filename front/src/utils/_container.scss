@@ -1,0 +1,11 @@
+@import './mixins';
+@import './variables';
+
+.container {
+  margin: 0 auto;
+  max-width: 320px;
+
+  @include on414 {max-width: 380px;}
+  @include on768 {max-width: 720px;}
+  // @include on1024 {max-width: 1020px;}
+}

@@ -1,0 +1,130 @@
+.rain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;        // ВАЖЛИВО: нічого не вилазить
+  z-index: 3;
+}
+
+.rain--off {
+  /* коли дощу нема — просто гасимо, але не змінюємо розміри */
+  opacity: 0;
+  transition: opacity 1.5s linear;
+}
+
+.drop {
+  position: absolute;
+  top: -20vh;
+  will-change: transform;
+
+  & > i {
+    display: block;
+    width: 1px;
+    height: 2vh;
+    opacity: 0.55;
+    filter: blur(0.6px);
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.95) 35%,
+      rgba(255,255,255,0.7) 100%
+    );
+    animation: spring-rain var(--duration, 2.5s) linear infinite;
+    animation-delay: var(--delay, 0s);
+  }
+}
+
+@keyframes spring-rain {
+  from { transform: translateY(0); }
+  to   { transform: translateY(130vh); }
+}
+
+/* ==== СОНЦЕ ==== */
+/* Дозволяємо анімувати кут і яскравість всередині градієнта */
+@property --sweep {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: -12deg;
+}
+@property --pulse {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 1;
+}
+
+/* Сонце */
+.sun {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;                  // приховані за замовчуванням
+  transition: opacity 5s ease; // плавна поява/зникнення
+  overflow: hidden;            // важливо: нічого не “вилазить” за межі екрана
+}
+
+.sun--show {
+  opacity: 0.55;               // м’яка інтенсивність
+}
+
+.rays {
+  position: absolute;
+  top: -12vh;
+  right: -12vw;
+  width: 150vw;
+  height: 110vh;
+  transform-origin: 100% 0%;   // обертання з правого верхнього
+  transform: rotate(-14deg);   // залишаю твій кут
+  filter: blur(3.5px);
+  mix-blend-mode: screen;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    /* базове «тепле» сяйво + власне промінчики */
+    background:
+      radial-gradient(closest-side at 100% 0%,
+        rgba(255, 245, 200, 0.35),
+        rgba(255, 245, 200, 0) 70%) ,
+      /* кут беремо з кастомної змінної --sweep */
+      repeating-conic-gradient(
+        from var(--sweep) at 100% 0%,
+        rgba(255, 255, 210, 0.0) 0deg,
+        rgba(255, 255, 210, 0.0) 7deg,
+        rgba(255, 255, 210, 0.55) 11deg,
+        rgba(255, 255, 210, 0.0) 16deg
+      );
+
+    /* пульс яскравості через brightness(), + легке «дихання» масштабом */
+    filter: brightness(var(--pulse));
+    transform: scale(1);
+
+    /* залишаємо твоє мерехтіння + додаємо два делікатні ефекти:
+       1) sun-pulse — світліше/темніше
+       2) sun-sweep — повільний зсув пучка */
+    animation:
+      sun-shimmer 22s ease-in-out infinite alternate,
+      sun-pulse   8s  ease-in-out infinite,
+      sun-sweep   18s ease-in-out infinite alternate;
+    will-change: filter, transform;
+  }
+}
+
+/* Твоє «дихання» — без змін */
+@keyframes sun-shimmer {
+  0%   { filter: blur(1px) brightness(var(--pulse)); transform: scale(1); }
+  100% { filter: blur(2px) brightness(var(--pulse)); transform: scale(1.05); }
+}
+
+/* Пульс яскравості */
+@keyframes sun-pulse {
+  0%, 100% { --pulse: 1;    opacity: .55; transform: scale(1);    }
+  50%      { --pulse: 1.18; opacity: .75; transform: scale(1.02); }
+}
+
+/* Повільний зсув “віяла” променів на кілька градусів */
+@keyframes sun-sweep {
+  0%   { --sweep: -12deg; }
+  100% { --sweep: -16deg; } // дуже легкий рух; можеш зробити -18deg для більшого ефекту
+}

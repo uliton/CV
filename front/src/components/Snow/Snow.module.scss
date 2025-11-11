@@ -1,0 +1,51 @@
+.snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  contain: layout paint;
+  // z-index: 1000; // за потреби налаштуй
+}
+
+.flake {
+  position: absolute;
+  left: var(--x);
+  top: -10vh;
+  animation: sway calc(var(--duration) * 0.8) ease-in-out var(--delay) infinite alternate;
+  will-change: transform;
+}
+
+.drop {
+  display: block;
+  animation: fall var(--duration) linear var(--delay) infinite;
+  will-change: transform;
+}
+
+.img {
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  background-image: var(--img);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: var(--opacity);
+  filter: blur(var(--blur));
+  animation: spin calc(var(--duration) * 0.9) linear var(--delay) infinite;
+  will-change: transform, opacity, filter;
+}
+
+/* Анімації розділені по вкладеним елементам, щоб трансформи не конфліктували */
+@keyframes fall {
+  to { transform: translateY(110vh); }
+}
+@keyframes sway {
+  from { transform: translateX(calc(var(--sway) * -1)); }
+  to   { transform: translateX(var(--sway)); }
+}
+@keyframes spin {
+  to { transform: rotate(var(--spin)); }
+}
+
+// @media (prefers-reduced-motion: reduce) {
+//   .flake, .drop, .img { animation: none !important; }
+// }

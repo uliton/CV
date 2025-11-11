@@ -1,0 +1,50 @@
+// height
+$headerHeight: 80px;
+$footerHeight: $headerHeight / 2;
+// IMPORTANT!   calc  all - footer
+$contentHeight: calc(100vh - 40px);
+$buttonBar: 56px;
+
+
+// colors
+$red: #cb0058;
+$lightText: #F7F8F9;
+$lightShadow: #DEDEDE;
+$darkText: #12201D;
+
+// winter
+$winterBgColor: #051223;
+// $winterTextColor: #F9F9F9;
+
+// spring
+// $springGreen: #3EA46A;
+$springBgColor: #0D2C25;
+// $springTextColor: #EAF7F1;
+
+// summer
+// $summerGreen: #2E8138;
+$summerBgColor: #0A2416;
+// $summerTextColor: #EEF9EF;
+
+// autumn
+// $autumnOrange: #D68A3A;
+$autumnBgColor: #2A1C14;
+// $autumnTextColor: #FFF4E8;
+
+
+// $winterTextColor: #F9F9F9;
+// $springTextColor: #EAF7F1;
+// $summerTextColor: #EEF9EF;
+// $autumnTextColor: #FFF4E8;
+// $lightBackgroundColor: #F6F6EE;
+
+
+
+// $mainLightColor: #F9F9F9;
+// $mainDarkColor: #2C2C2C;
+// $mainDarkElement: #343434;
+// $mainDarkShadow: #252525;
+// $mainLightShadow: #dedede;
+
+
+$lightBackgroundColor: #F6F6EE;

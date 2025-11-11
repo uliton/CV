@@ -1,0 +1,57 @@
+.leaves {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  // z-index: 2; // поверх фону, але під контентом якщо треба -> підлаштуйте
+}
+
+.leaf {
+  position: absolute;
+  top: -12vh;
+  will-change: transform;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.leafSway {
+  display: block;
+  will-change: transform;
+  /* хитання вліво/вправо */
+  animation: sway var(--sway) ease-in-out infinite alternate;
+}
+
+.leafImg {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  will-change: transform;
+  /* обертання */
+  animation: spin var(--spin) linear infinite;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,.15));
+}
+
+/* Падіння по вертикалі */
+@keyframes fall {
+  0%   { transform: translateY(-12vh); }
+  100% { transform: translateY(112vh); }
+}
+
+/* Хитання по горизонталі */
+@keyframes sway {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(6vw); }
+}
+
+/* Обертання навколо центру */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Поважаємо налаштування користувача */
+// @media (prefers-reduced-motion: reduce) {
+//   .leaf, .leafSway, .leafImg {
+//     animation: none !important;
+//   }
+// }

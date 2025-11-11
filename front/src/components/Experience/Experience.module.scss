@@ -1,0 +1,63 @@
+@import '../../utils/variables';
+
+.experience {
+  line-height: 140%;
+  padding: 0 8px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted $lightText;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 12px;
+    
+    &::before {
+      content: "- ";
+      margin-right: 8px;
+    }
+  }
+
+  &__body {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: "";
+      margin-left: 8px;
+    }
+  }
+}
+
+.content {
+  margin-bottom: 12px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  &__list {
+    margin-left: 20px;
+  }
+
+  &__item {
+    margin-bottom: 2px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../fonts/font-family.scss';
+@import './variables';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	&::after,
+	::before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+html {
+	font-family: Gilroy;
+	font-size: 12px;
+	font-weight: 300;
+	user-select: none;
+}
+
+html {
+	background-color: #060a0e;
+} // дефолт
+
+html.season--winter {
+	background-color: #060a0e;
+}
+html.season--spring {
+	background-color: #0b2016;
+}
+html.season--summer {
+	background-color: #0a1c0f;
+}
+html.season--autumn {
+	background-color: #211d0d;
+}
+
+body {
+	background: transparent;
+}
