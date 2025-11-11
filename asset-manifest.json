@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.76ee37e5.css",
-    "main.js": "./static/js/main.aea4c490.js",
-    "static/media/avatar.jpg": "./static/media/avatar.ec94639627be8f9bb9a1.jpg",
+    "main.css": "./static/css/main.99bc4d8c.css",
+    "main.js": "./static/js/main.8bdef70e.js",
+    "static/media/bg.png": "./static/media/bg.5eb41e345de50ce61724.png",
+    "static/media/avatar_color.jpg": "./static/media/avatar_color.45fda9d6b9a05ebaa759.jpg",
     "static/media/Gilroy-UltraLightItalic.ttf": "./static/media/Gilroy-UltraLightItalic.87f0acd42b27a5408e0b.ttf",
     "static/media/Gilroy-ThinItalic.ttf": "./static/media/Gilroy-ThinItalic.930dc405dc78cc97a766.ttf",
     "static/media/Gilroy-LightItalic.ttf": "./static/media/Gilroy-LightItalic.6d1bb712a33e4d603f27.ttf",
@@ -24,16 +25,22 @@
     "static/media/Gilroy-Black.ttf": "./static/media/Gilroy-Black.3566c87fe5eaaa7052d5.ttf",
     "static/media/Gilroy-Heavy.ttf": "./static/media/Gilroy-Heavy.41ca3e2d8c1dc7d3cde9.ttf",
     "static/media/bg.jpeg": "./static/media/bg.ebefd87aa2ebbd937eab.jpeg",
+    "static/media/5.svg": "./static/media/5.5b69becbb96a68d3a1e8fe146db8ef13.svg",
+    "static/media/2.svg": "./static/media/2.f6d8e981c07fc40029ad4fa5c80bdcd7.svg",
+    "static/media/6.svg": "./static/media/6.cbb1da4c7597bddf6476255b79b7c875.svg",
+    "static/media/3.svg": "./static/media/3.2a953c5a9f2ae0badfb61023bddfbc3e.svg",
+    "static/media/4.svg": "./static/media/4.459e49661c8e98a475054f28dbcaa971.svg",
+    "static/media/1.svg": "./static/media/1.3005b4bfbc80cf679a4c1fa233d53e41.svg",
     "static/media/email.svg": "./static/media/email.b85b8714bacd8bd1612a452718ebdd53.svg",
     "static/media/github.svg": "./static/media/github.5f33fe7e057f612c8173f6e9f3fa4946.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.f94168669a309db66c222264a040d087.svg",
     "static/media/telegram.svg": "./static/media/telegram.e3d3399f7ad692f73755965c283764cb.svg",
     "index.html": "./index.html",
-    "main.76ee37e5.css.map": "./static/css/main.76ee37e5.css.map",
-    "main.aea4c490.js.map": "./static/js/main.aea4c490.js.map"
+    "main.99bc4d8c.css.map": "./static/css/main.99bc4d8c.css.map",
+    "main.8bdef70e.js.map": "./static/js/main.8bdef70e.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ee37e5.css",
-    "static/js/main.aea4c490.js"
+    "static/css/main.99bc4d8c.css",
+    "static/js/main.8bdef70e.js"
   ]
 }
