@@ -3,7 +3,6 @@
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  // z-index: 2; // поверх фону, але під контентом якщо треба -> підлаштуйте
 }
 
 .leaf {
@@ -48,10 +47,3 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-
-/* Поважаємо налаштування користувача */
-// @media (prefers-reduced-motion: reduce) {
-//   .leaf, .leafSway, .leafImg {
-//     animation: none !important;
-//   }
-// }

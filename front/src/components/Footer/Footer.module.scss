@@ -6,24 +6,9 @@
 	height: $footerHeight;
 	line-height: $footerHeight;
 	text-align: center;
-	// box-shadow: 0 0 8px $lightShadow;
 	font-weight: 100;
 	margin-top: auto;
 	color: $lightText;
-  // opacity: .6;
-
-	&--winter {
-		// background-color: $winterBgColor;
-	}
-	&--spring {
-    // background-color: $springBgColor;
-	}
-	&--summer {
-    // background-color: $summerBgColor;
-	}
-	&--autumn {
-    // background-color: $autumnBgColor;
-	}
 }
 
 .text {

@@ -4,7 +4,6 @@
   pointer-events: none;
   overflow: hidden;
   contain: layout paint;
-  // z-index: 1000; // за потреби налаштуй
 }
 
 .flake {
@@ -45,7 +44,3 @@
 @keyframes spin {
   to { transform: rotate(var(--spin)); }
 }
-
-// @media (prefers-reduced-motion: reduce) {
-//   .flake, .drop, .img { animation: none !important; }
-// }

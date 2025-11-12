@@ -28,14 +28,17 @@ export default function Snowfall({
 	opacity = [0.6, 1],
 	blur = [0, 2.5],
 }: Props) {
-	const images = [
+const images = useMemo(
+	() => [
 		snowflake1,
 		snowflake2,
 		snowflake3,
 		snowflake4,
 		snowflake5,
 		snowflake6,
-	]
+	],
+	[]
+)
 	const flakes = useMemo(() => {
 		return Array.from({ length: count }).map((_, i) => {
 			const left = Math.random() * 100 // %

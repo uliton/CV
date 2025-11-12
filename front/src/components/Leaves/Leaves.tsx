@@ -1,4 +1,3 @@
-// src/components/Leaves.tsx
 import React, { useMemo } from 'react'
 import leaf1 from './1.svg'
 import leaf2 from './2.svg'
@@ -19,7 +18,7 @@ export const Leaves: React.FC<LeavesProps> = ({
 	speed = [24, 32],
 	size = [6, 12],
 }) => {
-  const images = [leaf1, leaf2, leaf3]
+  const images = useMemo(() => [leaf1, leaf2, leaf3], [])
 	const leaves = useMemo(() => {
 		return Array.from({ length: count }, (_, i) => {
 			const img = images[i % images.length]

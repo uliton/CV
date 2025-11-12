@@ -2,7 +2,7 @@
 @import '../../utils/mixins';
 
 $sbW: 10px; // ширина webkit-скролбара (під Firefox нижче окремі правила)
-$innerPadBottom: 40px; // як у тебе padding-bottom
+$innerPadBottom: 40px;
 
 .main {
 	position: relative;
@@ -11,10 +11,8 @@ $innerPadBottom: 40px; // як у тебе padding-bottom
 	height: auto;
 	max-height: calc(100svh - #{$footerHeight});
 
-	// як і було — компенсуємо fixed-панель: header + button bar
 	padding-top: $headerHeight + $buttonBar;
 	padding-left: 20px;
-	// трохи збільшуємо правий паддінг, щоб скролбар не врізався у заокруглення
 	padding-right: calc(6px + #{$sbW});
 	padding-bottom: $innerPadBottom;
 
@@ -105,16 +103,13 @@ $innerPadBottom: 40px; // як у тебе padding-bottom
 	min-height: 0; // <— критично для Safari
 	min-width: 0; // <— не дає контенту "випирати"
 
-	// максимум: весь доступний простір work мінус внутрішній відступ зверху (header+buttonBar) і знизу
 	max-height: calc(
 		100svh - #{$footerHeight} - (#{$headerHeight} + #{$buttonBar}) - #{$innerPadBottom}
 	);
 
 	overflow-y: auto;
-	overscroll-behavior: contain; // щоб колесо/тач не тягнуло всю сторінку
-	// scrollbar-gutter: stable; // резервує місце під скролбар (де доступно)
+	overscroll-behavior: contain;
 
-	// невелика відстань між контентом і скролбаром
 	padding-right: $sbW;
 
 	// ---- стилізація скролбара ----
@@ -125,12 +120,12 @@ $innerPadBottom: 40px; // як у тебе padding-bottom
 	&::-webkit-scrollbar-track {
 		background: rgba($lightText, 0.08);
 		border-radius: 8px;
-		margin: 8px 0; // не малюємо трек під заокругленнями
+		margin: 8px 0;
 	}
 	&::-webkit-scrollbar-thumb {
 		background: rgba($lightText, 0.35);
 		border-radius: 8px;
-		border: 2px solid transparent; // “внутрішня” доріжка
+		border: 2px solid transparent;
 		background-clip: padding-box;
 	}
 	&::-webkit-scrollbar-thumb:hover {
@@ -140,10 +135,6 @@ $innerPadBottom: 40px; // як у тебе padding-bottom
 	// Firefox
 	scrollbar-width: thin;
 	scrollbar-color: rgba($lightText, 0.45) transparent;
-
-	// Мікрооптимізації для плавності
-	// will-change: scroll-position;
-	// contain: layout paint;
 
 	isolation: isolate;
 	will-change: scroll-position;
