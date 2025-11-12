@@ -36,7 +36,7 @@
 
 /* Анімації розділені по вкладеним елементам, щоб трансформи не конфліктували */
 @keyframes fall {
-  to { transform: translateY(110vh); }
+  to { transform: translateY(110svh); }
 }
 @keyframes sway {
   from { transform: translateX(calc(var(--sway) * -1)); }

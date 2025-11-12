@@ -34,8 +34,8 @@
 
 /* Падіння по вертикалі */
 @keyframes fall {
-  0%   { transform: translateY(-12vh); }
-  100% { transform: translateY(112vh); }
+  0%   { transform: translateY(-12svh); }
+  100% { transform: translateY(112svh); }
 }
 
 /* Хитання по горизонталі */
