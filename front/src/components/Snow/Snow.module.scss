@@ -10,7 +10,7 @@
 .flake {
   position: absolute;
   left: var(--x);
-  top: -10vh;
+  top: -10svh;
   animation: sway calc(var(--duration) * 0.8) ease-in-out var(--delay) infinite alternate;
   will-change: transform;
 }

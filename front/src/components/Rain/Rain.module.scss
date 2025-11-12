@@ -14,13 +14,13 @@
 
 .drop {
   position: absolute;
-  top: -20vh;
+  top: -20svh;
   will-change: transform;
 
   & > i {
     display: block;
     width: 1px;
-    height: 2vh;
+    height: 2svh;
     opacity: 0.55;
     filter: blur(0.6px);
     background: linear-gradient(
@@ -68,10 +68,10 @@
 
 .rays {
   position: absolute;
-  top: -12vh;
+  top: -12svh;
   right: -12vw;
   width: 150vw;
-  height: 110vh;
+  height: 110svh;
   transform-origin: 100% 0%;   // обертання з правого верхнього
   transform: rotate(-14deg);   // залишаю твій кут
   filter: blur(3.5px);
