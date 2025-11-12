@@ -44,6 +44,8 @@ $innerPadBottom: 40px; // як у тебе padding-bottom
 	background-color: $lightText;
 	margin-bottom: 24px;
 
+  z-index: 4;
+
 	@include on414 {
 		width: 340px;
 		padding: 4px 3px 3px;
