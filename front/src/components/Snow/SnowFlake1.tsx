@@ -2,7 +2,7 @@ import style from './SnowFlake.module.scss'
 
 export default function SnowFlake1() {
 	return (
-		<svg version='1.1' viewBox='0 0 256 256' className={style.svg}>
+		<svg version='1.1' width='256' height='256' viewBox='0 0 256 256'>
 			<g
 				className={style.G}
 				transform='translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)'
