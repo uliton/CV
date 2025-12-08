@@ -21,16 +21,25 @@
 }
 
 .img {
-  display: block;
+  // display: block;
+  // width: var(--size);
+  // height: var(--size);
+  // background-image: var(--img);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+	display: block;
   width: var(--size);
-  height: var(--size);
-  background-image: var(--img);
-  background-size: contain;
-  background-repeat: no-repeat;
+	height: var(--size);
   opacity: var(--opacity);
   filter: blur(var(--blur));
   animation: spin calc(var(--duration) * 0.9) linear var(--delay) infinite;
   will-change: transform, opacity, filter;
+
+	svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
 }
 
 /* Анімації розділені по вкладеним елементам, щоб трансформи не конфліктували */

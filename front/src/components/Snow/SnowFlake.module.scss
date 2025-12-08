@@ -1,0 +1,27 @@
+.svg {
+	width: 12px;
+	height: 12px;
+}
+
+.G {
+	stroke: none;
+	stroke-width: 0;
+	stroke-dasharray: none;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-miterlimit: 10;
+	fill: none;
+	fill-rule: nonzero;
+	opacity: 1;
+}
+.P {
+	stroke: none;
+	stroke-width: 1;
+	stroke-dasharray: none;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-miterlimit: 10;
+	fill: rgb(255, 255, 255);
+	fill-rule: nonzero;
+	opacity: 1;
+}
