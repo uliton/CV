@@ -4,7 +4,7 @@ import { Season } from "../styles/functions";
 export const SeasonContext = React.createContext(Season.winter);
 
 export const getCurrentSeason = (setSeason: (arg: Season) => void) => {
-  // const date: number = 6;
+  // const date: number = 1;
   const date = new Date().getMonth();
 
   switch (date) {
