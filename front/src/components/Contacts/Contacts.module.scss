@@ -23,7 +23,8 @@
   line-height: 150%;
   font-size: 20px;
   letter-spacing: 1px;
-  width: 250px;
+  width: calc(100% - 40px);
+  max-width: 360px;
   font-weight: 300;
   margin-bottom: 50px;
   user-select: none;
@@ -37,19 +38,10 @@
   gap: 16px;
 }
 
-.link {
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 500ms;
-  color: $red;
-
-  &:hover {
-    text-shadow: 0 0 1px;
-  }
-}
-
 .icon-link {
   border-radius: 50%;
+  color: inherit;
+  overflow-wrap: anywhere;
   user-select: none;
 
   &__icon {

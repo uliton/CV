@@ -1,5 +1,6 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
+@import '../../utils/scrollbar';
 
 $sbW: 10px; // ширина webkit-скролбара (під Firefox нижче окремі правила)
 $innerPadBottom: 40px;
@@ -108,33 +109,10 @@ $innerPadBottom: 40px;
 	);
 
 	overflow-y: auto;
-	overscroll-behavior: contain;
 
 	padding-right: $sbW;
 
-	// ---- стилізація скролбара ----
-	// Chrome/Edge/Safari
-	&::-webkit-scrollbar {
-		width: $sbW;
-	}
-	&::-webkit-scrollbar-track {
-		background: rgba($lightText, 0.08);
-		border-radius: 8px;
-		margin: 8px 0;
-	}
-	&::-webkit-scrollbar-thumb {
-		background: rgba($lightText, 0.35);
-		border-radius: 8px;
-		border: 2px solid transparent;
-		background-clip: padding-box;
-	}
-	&::-webkit-scrollbar-thumb:hover {
-		background: rgba($lightText, 0.55);
-	}
-
-	// Firefox
-	scrollbar-width: thin;
-	scrollbar-color: rgba($lightText, 0.45) transparent;
+	@include cv-scrollbar($sbW);
 
 	isolation: isolate;
 	will-change: scroll-position;

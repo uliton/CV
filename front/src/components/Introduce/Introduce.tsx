@@ -23,6 +23,8 @@ export const Introduce: React.FC<Props> = () => {
 					className={style.introduce__photo}
 				/>
 
+				{mock.data.position && <h2 className={style.introduce__position}>{mock.data.position}</h2>}
+
 				{introduceText.map((text, i) => (
 					<p key={i} className={style.introduce__text}>
 						{text}

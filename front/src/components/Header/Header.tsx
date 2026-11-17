@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
 										getCurrentClassNames(style, 'link', season)
 									)}
 								>
-									{name}
+								{mock.data.navLabels?.[name as keyof Nav] ?? name}
 								</Link>
 							</li>
 						))}

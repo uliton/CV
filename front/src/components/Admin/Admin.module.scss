@@ -1,0 +1,257 @@
+@import '../../utils/variables';
+@import '../../utils/scrollbar';
+@import '../../utils/form-fields';
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+  padding-inline: clamp(6px, 3vw, 24px);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.primary {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 4px;
+  background-color: $red;
+  color: $lightText;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 180ms ease;
+
+  &:hover:not(:disabled) {
+    background-color: darken($red, 12%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $lightText;
+    outline-offset: 2px;
+  }
+}
+
+.panel {
+  position: relative;
+  z-index: 4;
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  max-height: calc(100svh - #{$headerHeight} - #{$footerHeight} - 16px);
+  padding: 20px clamp(12px, 4vw, 30px) 24px;
+  border: 1px solid $lightText;
+  border-top: 0;
+  border-radius: 0 0 50px 6px;
+  font-size: 14px;
+  background-color: var(--admin-panel-background);
+
+  &:global(.container) {
+    margin-top: $headerHeight;
+    margin-bottom: 16px;
+  }
+
+  &--winter {
+    --admin-panel-background: #{$winterBgColor};
+  }
+
+  &--spring {
+    --admin-panel-background: #{$springBgColor};
+  }
+
+  &--summer {
+    --admin-panel-background: #{$summerBgColor};
+  }
+
+  &--autumn {
+    --admin-panel-background: #{$autumnBgColor};
+  }
+}
+
+.sectionTitle {
+  padding: 0 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  padding: 4px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: $lightText;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.tab {
+  min-height: 34px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: $darkText;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    box-shadow: inset 0 0 0 1px $red;
+  }
+
+  &[aria-selected='true'] {
+    background-color: $red;
+    color: $lightText;
+  }
+}
+
+.viewport {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 4px 10px 4px 4px;
+  @include cv-scrollbar;
+}
+
+.action {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid $lightText;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+
+  &:hover:not(:disabled) {
+    background-color: $lightText;
+    color: $darkText;
+  }
+}
+
+.delete:hover:not(:disabled) {
+  border-color: $red;
+  background-color: $red;
+  color: $lightText;
+}
+
+.action:disabled,
+.primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.editor {
+  @include form-fields;
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba($lightText, 0.35);
+  border-radius: 6px;
+  min-width: 0;
+  margin-inline: 0;
+
+  h3 {
+    margin: 0;
+  }
+
+  label {
+    display: grid;
+    gap: 4px;
+  }
+}
+
+.entry {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgba($lightText, 0.25);
+  border-radius: 4px;
+}
+
+.details {
+  summary {
+    cursor: pointer;
+  }
+
+  label {
+    margin-top: 8px;
+  }
+}
+
+.notice:not(:empty) {
+  margin-top: 12px;
+}
+
+.projects {
+  list-style: none;
+}
+
+.projectSection {
+  margin-top: 16px;
+
+  h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+  }
+}
+
+.projectToolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-bottom: 4px;
+  background-color: var(--admin-panel-background);
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba($lightText, 0.25);
+}
+
+.projectIdentity {
+  flex: 1 1 160px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.projectRole {
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba($lightText, 0.8);
+}
+
+.move {
+  width: 36px;
+  padding: 0;
+  font-size: 18px;
+}

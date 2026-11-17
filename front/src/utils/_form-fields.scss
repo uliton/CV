@@ -1,0 +1,37 @@
+@import 'variables';
+
+@mixin form-fields {
+  input,
+  textarea,
+  select {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    border: 1px solid $lightShadow;
+    border-radius: 4px;
+    background-color: $lightText;
+    color: $darkText;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    user-select: text;
+
+    &:focus-visible {
+      outline: 2px solid $lightText;
+      outline-offset: 2px;
+    }
+  }
+
+  input,
+  select {
+    height: 44px;
+    padding: 0 12px;
+  }
+
+  textarea {
+    min-height: 44px;
+    padding: 10px 12px;
+    resize: vertical;
+  }
+}

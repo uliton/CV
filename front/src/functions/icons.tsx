@@ -37,6 +37,6 @@ export const getContactIcon = (title: string, module: Module) => {
       )
     
     default:
-      return <></>
+      return <span>{title}</span>
   }
 }

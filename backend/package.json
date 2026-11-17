@@ -1,0 +1,17 @@
+{
+  "name": "cv-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "jsonwebtoken": "9.0.3",
+    "zod": "4.3.6"
+  }
+}

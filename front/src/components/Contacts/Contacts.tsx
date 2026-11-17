@@ -14,7 +14,6 @@ type Props = {}
 export const Contacts: React.FC<Props> = () => {
 	const mock = useContext(MockContext)
 	const season = useContext(SeasonContext)
-	const fileUrl = '/files/CV.pdf'
 	const contacts: Contact[] = mock.data.contacts
 
 	return (
@@ -24,30 +23,7 @@ export const Contacts: React.FC<Props> = () => {
 			<div className='container'>
 				<div className={style.content}>
 					<p className={style.title}>
-						You also can{' '}
-						<a
-							href={process.env.PUBLIC_URL + fileUrl}
-							target='_blank'
-							rel='noreferrer'
-							className={classNames(
-								getCurrentClassNames(style, 'link', season)
-							)}
-						>
-							OPEN
-						</a>{' '}
-						ore{' '}
-						<a
-							href={process.env.PUBLIC_URL + fileUrl}
-							className={classNames(
-								getCurrentClassNames(style, 'link', season)
-							)}
-							download
-						>
-							DOWNLOAD
-						</a>{' '}
-						my CV
-						<br />
-						And always can easily connect with me!
+						Need a developer or have a project in mind? Feel free to get in touch.
 					</p>
 
 					<ul className={style.list}>

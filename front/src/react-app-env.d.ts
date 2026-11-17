@@ -3,6 +3,7 @@
 interface Mock {
   name: string,
   nav: Nav,
+  navLabels?: Nav,
   position: string,
   about: string[],
   skills: Skill[],
@@ -50,5 +51,8 @@ interface Project {
   id: number,
   title: string,
   link: string,
+  category?: 'project' | 'game',
+  role?: string,
+  description?: string,
   technologies: string[],
 };

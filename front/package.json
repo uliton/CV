@@ -30,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "REACT_APP_CV_STATIC=true npm run build",
+    "deploy": "gh-pages -d build -s '**/!(CV.pdf)'"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +55,7 @@
     "@types/react": "^18.3.26",
     "@types/react-dom": "^18.3.7",
     "gh-pages": "^3.1.0",
+    "http-proxy-middleware": "2.0.9",
     "sass": "^1.93.3"
   }
 }

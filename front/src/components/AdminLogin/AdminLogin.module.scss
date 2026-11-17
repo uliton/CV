@@ -1,0 +1,100 @@
+@import '../../utils/variables';
+@import '../../utils/form-fields';
+
+.login {
+  position: relative;
+  z-index: 4;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  flex: 0 0 auto;
+  margin: $headerHeight auto 28px;
+  padding: 36px clamp(24px, 6vw, 40px);
+  border: 1px solid $lightText;
+  border-top: 0;
+  border-radius: 0 0 50px 6px;
+
+  &--winter {
+    background-color: $winterBgColor;
+  }
+
+  &--spring {
+    background-color: $springBgColor;
+  }
+
+  &--summer {
+    background-color: $summerBgColor;
+  }
+
+  &--autumn {
+    background-color: $autumnBgColor;
+  }
+}
+
+.form,
+.field {
+  display: grid;
+}
+
+.form {
+  @include form-fields;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.field {
+  gap: 6px;
+}
+
+.password {
+  position: relative;
+
+  input {
+    padding-right: 48px;
+
+    &::-ms-reveal {
+      display: none;
+    }
+  }
+}
+
+.toggle {
+  position: absolute;
+  inset: 0 0 0 auto;
+  display: grid;
+  width: 44px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: $darkText;
+  cursor: pointer;
+}
+
+.submit {
+  min-height: 44px;
+  border: 0;
+  border-radius: 4px;
+  background-color: $red;
+  color: $lightText;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle:focus-visible,
+.submit:focus-visible {
+  outline: 2px solid $lightText;
+  outline-offset: 2px;
+}
+
+.toggle:focus-visible {
+  outline-color: $red;
+  outline-offset: -4px;
+}
+
+.status:not(:empty) {
+  margin-top: 16px;
+}

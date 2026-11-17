@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
-import axios from 'axios'
-import { Route, Routes } from 'react-router'
-import MOCK from './mockData.json'
+import { Navigate, Outlet, Route, Routes, useMatch } from 'react-router'
+import { ApiError, getContent, getSession, logIn, logOut, updateContent } from './api'
 
 import { Header } from './components/Header'
 import { Main } from './components/Main'
@@ -10,9 +9,11 @@ import { Work } from './components/Work'
 import { Contacts } from './components/Contacts'
 import { Footer } from './components/Footer'
 import { NotFound } from './components/NotFound'
+import { AdminLogin } from './components/AdminLogin/AdminLogin'
+import { Admin } from './components/Admin/Admin'
 
 import { SeasonContext, getCurrentSeason } from './context/season'
-import { MockContext } from './context/mock'
+import { initialContent, MockContext } from './context/mock'
 import {
 	Season,
 	getCurrentClassNames,
@@ -24,34 +25,36 @@ import Snowfall from './components/Snow/Snow'
 import { Rain } from './components/Rain/Rain'
 import { Fireflies } from './components/Fireflies/Fireflies'
 
+const staticBuild = process.env.REACT_APP_CV_STATIC === 'true'
+
 export const App: React.FC = () => {
 	const [season, setSeason] = useState<Season>(Season.winter)
+	const isAdminRoute = Boolean(useMatch('/admin/*'))
+	const [isAdminSignedIn, setIsAdminSignedIn] = useState<boolean | null>(null)
+	const [content, setContent] = useState<{ data: Mock; revision: string } | null>(null)
+	const [loading, setLoading] = useState(!staticBuild)
 
-	const [mockData, setMockData] = useState<any>(MOCK)
-	const [loading, setLoading] = useState(false)
-	const [error, setError] = useState<string | null>(null)
+	const signIn = async (username: string, password: string) => {
+		await logIn(username, password)
+		await getSession()
+		setIsAdminSignedIn(true)
+	}
 
-	const refresh = useCallback(async () => {
-		setLoading(true)
-		setError(null)
+	const signOut = async () => {
+		await logOut()
+		setIsAdminSignedIn(false)
+	}
+
+	const saveContent = async (changes: Partial<Mock>) => {
+		if (!content) throw new Error('Reload the page to load the current content.')
+
 		try {
-			// базовий локальний бекенд; за потреби заміниш на ENV
-			const res = await axios.get(
-				'http://95.67.70.46:6376/data?db=mock&col=cv',
-				{
-					headers: {
-						'X-API-Key': 'test',
-					},
-				}
-			)
-			setMockData(res?.data[0] ?? MOCK)
-		} catch (e: any) {
-			setMockData(MOCK)
-			setError(e?.message ?? 'Fetch failed')
-		} finally {
-			setLoading(false)
+			setContent(await updateContent({ ...content.data, ...changes }, content.revision))
+		} catch (error) {
+			if (error instanceof ApiError && error.status === 401) setIsAdminSignedIn(false)
+			throw error
 		}
-	}, [])
+	}
 
 	useEffect(() => {
 		getCurrentSeason(setSeason)
@@ -67,11 +70,26 @@ export const App: React.FC = () => {
 	}, [season])
 
 	useEffect(() => {
-		refresh()
-	}, [refresh])
+		if (staticBuild) return
+		let active = true
+		getContent()
+			.then(result => { if (active) setContent(result) })
+			.catch(() => {})
+			.finally(() => { if (active) setLoading(false) })
+		return () => { active = false }
+	}, [])
+
+	useEffect(() => {
+		if (staticBuild || !isAdminRoute) return
+		let active = true
+		getSession()
+			.then(() => { if (active) setIsAdminSignedIn(true) })
+			.catch(() => { if (active) setIsAdminSignedIn(false) })
+		return () => { active = false }
+	}, [isAdminRoute])
 
 	return (
-		<MockContext.Provider value={{ data: mockData, loading }}>
+		<MockContext.Provider value={{ data: content?.data ?? initialContent, loading }}>
 			<SeasonContext.Provider value={season}>
 				<div className={classNames(getCurrentClassNames(style, 'app', season))}>
 
@@ -80,18 +98,33 @@ export const App: React.FC = () => {
 					{season === Season.summer && <Fireflies />}
 					{season === Season.autumn && <Leaves />}
 
-					<Header />
-
 					<Routes>
-						<Route path='/' element={<Main />} />
-						<Route path='/work' element={<Work />} />
-						<Route path='/contacts' element={<Contacts />} />
-						<Route path='*' element={<NotFound />} />
+						<Route element={<><Header /><Outlet /></>}>
+							<Route path='/' element={<Main />} />
+							<Route path='/work' element={<Work />} />
+							<Route path='/contacts' element={<Contacts />} />
+							{!staticBuild && <Route path='/admin/login' element={
+								isAdminSignedIn === true
+									? <Navigate to='/admin' replace />
+									: <AdminLogin onSignIn={signIn} checkingSession={isAdminSignedIn === null} />
+							} />}
+							<Route path='*' element={<NotFound />} />
+						</Route>
+						{!staticBuild && <Route path='/admin' element={
+							isAdminSignedIn === false
+								? <Navigate to='/admin/login' replace />
+								: isAdminSignedIn && <Admin
+									onSignOut={signOut}
+									onSaveContent={saveContent}
+									content={content?.data}
+									loading={loading}
+								/>
+						} />}
 					</Routes>
 
 					{/* <div style={{ height: '24px' }}></div> */}
 
-					<Footer />
+					<Footer showAdminLink={!staticBuild} />
 				</div>
 			</SeasonContext.Provider>
 		</MockContext.Provider>

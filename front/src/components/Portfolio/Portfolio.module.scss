@@ -4,6 +4,16 @@
   line-height: 140%;
   padding: 0 8px;
 
+  &__section + &__section {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid rgba($lightText, 0.3);
+  }
+  &__heading {
+    margin: 0 0 16px;
+    font-size: 19px;
+    font-weight: 600;
+  }
   &__list {
     list-style: none;
   }
@@ -29,6 +39,16 @@
      &::before {
       content: "- ";
     }
+  }
+  &__role {
+    margin-bottom: 8px;
+    color: rgba($lightText, 0.8);
+    overflow-wrap: anywhere;
+  }
+  &__description {
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
   &__link {
     display: block;

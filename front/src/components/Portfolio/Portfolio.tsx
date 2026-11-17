@@ -1,53 +1,61 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import { MockContext } from '../../context/mock';
+import { getPortfolioSections } from '../../functions/portfolio';
 
 import style from './Portfolio.module.scss';
 
-type Props = {}
-
-export const Portfolio: React.FC<Props> = () => {
+export const Portfolio = () => {
   const mock = useContext(MockContext)
-  const portfolioText: Project[] = [...mock.data.portfolio].reverse()
-
-  useEffect(() => {
-
-  },[])
+  const sections = getPortfolioSections([...mock.data.portfolio].reverse())
 
   return (
     <div className={style.portfolio}>
-      <ul className={style.portfolio__list}>
-        {portfolioText.map(project => (
-          <li key={project.id} className={style.portfolio__item}>
-            <p className={style.project__title}>
-              {project.title}
-            </p>
+      {sections.map(({ title, items }) => (
+        <section className={style.portfolio__section} key={title}>
+          {(sections.length > 1 || title === 'Games') && (
+            <h2 className={style.portfolio__heading}>{title}</h2>
+          )}
+          <ul className={style.portfolio__list}>
+            {items.map(project => (
+              <li key={project.id} className={style.portfolio__item}>
+                <p className={style.project__title}>
+                  {project.title}
+                </p>
 
-            <Link
-              to={project.link}
-              className={style.project__link}
-              rel='noreferrer'
-              target='_blank'
-              title={project.title}
-            >
-              link
-            </Link>
+                {project.role && <p className={style.project__role}>{project.role}</p>}
 
-            <div className={style.technologies}>
-              Technologies:
+                {project.description && (
+                  <p className={style.project__description}>{project.description}</p>
+                )}
 
-              <ul className={style.technologies__list}>
-                {project.technologies.map((technology, i) => (
-                  <li key={i} className={style.technologies__item}>
-                    {technology}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-        ))}
-      </ul>
+                <Link
+                  to={project.link}
+                  className={style.project__link}
+                  rel='noreferrer'
+                  target='_blank'
+                  aria-label={project.category === 'game' ? `Play ${project.title}` : `Open ${project.title}`}
+                >
+                  {project.category === 'game' ? 'Play' : 'Link'}
+                </Link>
+
+                <div className={style.technologies}>
+                  Technologies:
+
+                  <ul className={style.technologies__list}>
+                    {project.technologies.map((technology, i) => (
+                      <li key={i} className={style.technologies__item}>
+                        {technology}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   );
 };

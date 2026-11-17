@@ -32,8 +32,13 @@
 	transition: all 500ms;
 	color: $lightText;
 
-	&:hover {
+	&:hover,
+	&:focus-visible {
 		color: $red;
+	}
+
+	&:focus-visible {
+		outline: none;
 	}
 }
 

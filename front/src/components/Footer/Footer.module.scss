@@ -14,3 +14,13 @@
 .text {
 	user-select: none;
 }
+
+.link {
+	color: inherit;
+	text-decoration: none;
+	cursor: default;
+
+	&:focus-visible {
+		outline: none;
+	}
+}

@@ -5,59 +5,74 @@
     "work": "/work",
     "contacts": "/contacts"
   },
-  "position": "Front-end developer",
+  "position": "Full-Stack Developer",
   "about": [
-    "Graduated from the Kyiv National Economic University and received a diploma in enterprise strategy and consulting. Had taken part in the student exchange program and studied in the UK.",
-    "I have a lot of experience in different industries. Auto services, sales, operational management, agricultural sector, private enterprise. All this experience has helped me achieve many cool projects with good results. I'm sure it will help me find a common language within a team and find solutions in difficult situations. I also know how to look at the business as a whole, so that it gives me the opportunity to offer complex solutions.",
-    "I have over 2000 hours of coding and my main stack consists of React, JavaScript, HTML and CSS. And I'm also open to learning Vue, React Native, Angular and any other technology."
+    "I build and deploy full-stack web applications, working across user interfaces, APIs, databases, and server infrastructure. I also build data processing workflows, dashboards, and automation for business operations, including UiPath workflows and Telegram integrations."
   ],
   "skills": [
     {
       "id": 1,
-      "title": "Working with",
-      "body": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Git", "NPM", "ESLint", "Sass(SCSS)", "Redux", "REST API", "SQL", "classNames", "localeStorage", "Routing", "SVG", "JSON"]
+      "title": "Front-end",
+      "body": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Sass (SCSS)"
+      ]
     },
     {
       "id": 2,
-      "title": "Frameworks",
-      "body": ["Material Ui", "Bootstrap", "Bulma"]
+      "title": "Web applications",
+      "body": [
+        "REST APIs",
+        "React Router",
+        "Redux",
+        "Material UI"
+      ]
     },
     {
       "id": 3,
-      "title": "Tools",
-      "body": ["AWS", "Figma", "Trello", "Slack"]
+      "title": "Development tools",
+      "body": [
+        "Git",
+        "npm",
+        "Vite",
+        "ESLint",
+        "GitHub Actions"
+      ]
     },
     {
       "id": 4,
-      "title": "Methodologies",
-      "body": ["BEM"]
+      "title": "Automation",
+      "body": [
+        "UiPath Studio",
+        "UI automation",
+        "Excel automation",
+        "PDF automation"
+      ]
     },
     {
       "id": 5,
-      "title": "English level",
-      "body": ["Intermediate"]
-    },
-    {
-      "id": 6,
-      "title": "Basic OOP understanding",
-      "body": []
+      "title": "Languages",
+      "body": [
+        "English (Intermediate)"
+      ]
     }
   ],
   "education": [
-    "Graduated from Kyiv National Economic University (KNEU) in 2004, specializing in economics and entrepreneurship with advanced English studying, got a bachelor\"s degree.",
-    "Received a master\"s degree in consulting in 2005.",
-    "Passed 3-months English summer school in Great Britain in 2002."
+    "Kyiv National Economic University — Master’s degree in Consulting, 2005",
+    "Kyiv National Economic University — Bachelor’s degree in Economics and Entrepreneurship, 2004",
+    "Three-month English language summer programme in the UK, 2002"
   ],
   "self_education": [
-    "Mate Academy",
-    "developer.mozilla.org",
-    "stackoverflow.com",
-    "w3schools.com",
-    "reactjs.org"
+    "Mate Academy — Full-time Front-end Development programme, 2022",
+    "UiPath Academy — Coursework in UiPath Studio, UI automation, and Excel and PDF automation, 2024"
   ],
   "sport": [
-    "Candidate Master of Sports in short distance swimming",
-    "Professionally engaged in auto-sports from 2003 to 2012. Karting, drag racing, drifting."
+    "Candidate Master of Sports in sprint swimming",
+    "Motorsport (2003–2012) — karting, drag racing, and drifting"
   ],
   "experience": [
     {
@@ -77,7 +92,6 @@
         ]
       }
     },
-
     {
       "id": 2,
       "title": "Project & Event manager at Auto business with LINEYКА (2010 - 2012), RED LINE (2009 - 2010)",
@@ -100,7 +114,6 @@
         ]
       }
     },
-
     {
       "id": 3,
       "title": "Project manager at Retail businesses (2012 - 2016)",
@@ -118,11 +131,9 @@
         ]
       }
     },
-
     {
       "id": 4,
       "title": "Marketing & Project manager at Agro business with \"SUPERHERO\" (2016 - 11.2021)",
-
       "results": {
         "title": "List of significant results and impact:",
         "content": [
@@ -144,106 +155,208 @@
         ]
       }
     },
-
     {
       "id": 5,
       "title": "Front-end studding (2021 - 2022)",
       "body": "Graduate from Mate Academy Front-end course in summer of 2022. It takes near 6 month of full time learning. Made more than 50 pet projects."
     },
-    
     {
       "id": 6,
       "title": "Front-end developer (2022 - present)",
       "body": "Since the summer of 2022 I have been working as a freelancer. Completed simple, single tasks. And also made some interesting projects using different technologies."
+    },
+    {
+      "id": 7,
+      "title": "RPA Developer",
+      "body": "Developed and implemented business process automations using UiPath Studio"
     }
-
   ],
- "portfolio": [
-      {
-        "id": 1,
-        "title": "Landing MIAMI",
-        "link": "https://uliton.github.io/miami-landing/",
-        "technologies": ["HTML", "BEM", "CSS", "Flex"]
-      },
-      {
-        "id": 2,
-        "title": "Landing BAKERY",
-        "link": "https://uliton.github.io/bakery-landing/",
-        "technologies": ["HTML", "BEM", "CSS", "Grid"]
-      },
-      {
-        "id": 3,
-        "title": "Recursive list",
-        "link": "https://uliton.github.io/recursive_list/",
-        "technologies": ["localStorage"]
-      },
-      {
-        "id": 4,
-        "title": "Users form",
-        "link": "https://uliton.github.io/users_form/",
-        "technologies": ["React", "Hooks", "Grid", "Material UI", "REST Api"]
-      },
-      {
-        "id": 5,
-        "title": "Currency Converter",
-        "link": "https://uliton.github.io/currency_converter/",
-        "technologies": ["JS", "React", "debounce", "REST Api"]
-      },
-      {
-        "id": 6,
-        "title": "Personal App with a list of companies that are hiring junior IT specialists",
-        "link": "https://uliton.github.io/job_for_jun/",
-        "technologies": ["JS", "TS", "React", "REST Api", "localeStorage"]
-      },
-      {
-        "id": 7,
-        "title": "Users posts",
-        "link": "https://uliton.github.io/users_posts/",
-        "technologies": ["JS", "TS", "React", "REST Api"]
-      },
-      {
-        "id": 8,
-        "title": "Dictionary",
-        "link": "https://uliton.github.io/dictionary/",
-        "technologies": ["React", "Redux", "Hooks", "localeStorage"]
-      },
-      {
-        "id": 9,
-        "title": "Countries",
-        "link": "https://uliton.github.io/countries/",
-        "technologies": ["JS", "TS", "React", "Redux", "Hooks", "REST Api", "SASS", "classNames"]
-      },
-      {
-        "id": 10,
-        "title": "Freelance project",
-        "link": "https://uliton.github.io/GR_shipping/",
-        "technologies": ["JS", "React", "Hooks", "SASS", "classNames"]
-      },
-      {
-        "id": 11,
-        "title": "Personal website where I collect video evidence of Russian occupiers",
-        "link": "https://okupant.online/",
-        "technologies": ["JS", "React", "Hooks", "SASS", "classNames", "Routing"]
-      },
-      {
-        "id": 12,
-        "title": "Ideas calendar",
-        "link": "https://uliton.github.io/ideas_calendar/",
-        "technologies": ["JS", "React", "Hooks", "SASS", "classNames"]
-      },
-      {
-        "id": 13,
-        "title": "USA Map",
-        "link": "https://uliton.github.io/usa_map/",
-        "technologies": ["JS", "TS", "React", "JSON", "SVG", "SASS"]
-      },
-      {
-        "id": 14,
-        "title": "Union Stone",
-        "link": "https://uliton.github.io/union/",
-        "technologies": ["JS", "React", "JSON", "SVG", "SASS", "Hooks", "classNames", "Routing", "Flex", "Grid"]
-      }
-    ],
+  "portfolio": [
+    {
+      "id": 10,
+      "title": "GR Shipping — Vehicle Import Calculator",
+      "link": "https://uliton.github.io/GR_shipping/",
+      "description": "Built a React calculator for a vehicle import company. It helps customers estimate customs duties, taxes, and shipping costs before purchasing a vehicle in the US or Canada.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "React Hooks",
+        "Redux",
+        "React Router",
+        "Sass (SCSS)",
+        "classnames"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Union Stone",
+      "link": "https://uliton.github.io/union/",
+      "description": "Developed a React website for a manufacturer of natural amber slabs and furniture. Built a product catalog with collection pages and image galleries so visitors can browse materials and see how they are used in interiors.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "React Hooks",
+        "React Router",
+        "Sass (SCSS)",
+        "SVG",
+        "JSON",
+        "Flexbox",
+        "CSS Grid",
+        "classnames"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "AIK Trans — Freight Transport Website",
+      "link": "https://uliton.github.io/aik_trans/",
+      "role": "Front-end Developer",
+      "description": "Built a responsive website for a freight transport company. The site presents its services and includes a quote request form with field validation.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Vite",
+        "CSS",
+        "Fetch API",
+        "GitHub Actions",
+        "GitHub Pages"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Casino Royale Live",
+      "link": "https://crl.md/",
+      "role": "Full-Stack Developer",
+      "description": "Built the Casino Royale Live platform end to end, including the player-facing website, admin panel, and backend API. Integrated games from a third-party provider into the platform’s lobby.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "NestJS",
+        "Prisma",
+        "PostgreSQL",
+        "Redis",
+        "Docker Compose"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Kolir.in",
+      "link": "https://kolir.in/",
+      "role": "Full-Stack Developer",
+      "description": "Built and deployed a color palette generator that turns a word or phrase into a palette of 20 HEX colors. The API looks up existing palettes in MongoDB, generates new variants through the OpenAI API when fewer than five are stored, and reuses saved palettes once five variants are available.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "React Router",
+        "Sass (SCSS)",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "OpenAI API"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "am-am",
+      "link": "https://uliton.github.io/amam/",
+      "role": "Full-Stack Developer",
+      "description": "Built and deployed a shared feeding tracker for families. The app supports multiple family groups and lets family administrators manage who can view, add, or edit feeding records. It gives caregivers a shared feeding history and statistics.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Vite",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Nginx"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "SvitloE",
+      "link": "https://svitloe.in.ua/",
+      "role": "Full-Stack Developer · Hardware and Firmware",
+      "description": "Designed and built a power availability monitoring system end to end. Developed and programmed an ESP32 device that sends heartbeat requests while powered. Built the server and a web dashboard where users activate devices with a code and choose where to receive power status notifications.",
+      "technologies": [
+        "React",
+        "Vite",
+        "Sass (SCSS)",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "ESP32",
+        "Arduino (C++)",
+        "W5500 Ethernet",
+        "Telegram Bot API",
+        "Nginx"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Maplezo",
+      "link": "https://maplezo.com/",
+      "role": "Lead Front-end Engineer",
+      "description": "Led front-end engineering at Maplezo, a fintech company, and contributed to backend development on selected projects. Built the portal, sign-in and authorization flows, a reconciliation dashboard, and an admin panel for account creation and access management. Implemented a crypto exchange workflow with validation, status tracking, and third-party integrations.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Material UI",
+        "TanStack Query",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Arrow Puzzle",
+      "link": "https://uliton.github.io/arrow_puzzle/",
+      "category": "game",
+      "role": "Game Developer",
+      "description": "Built a browser puzzle where players clear a path for the red arrow to leave the board. Implemented a puzzle generator with ten difficulty levels.",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Canvas 2D",
+        "CSS Grid",
+        "Web App Manifest",
+        "localStorage"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Color Match",
+      "link": "https://uliton.github.io/color_match/",
+      "category": "game",
+      "role": "Game Developer",
+      "description": "Built a browser puzzle where players score by matching colored pieces in lines and 2×2 squares. Includes endless play and level-based challenges.",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "CSS Grid",
+        "Web App Manifest",
+        "localStorage"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Duck Sorter",
+      "link": "https://uliton.github.io/duck_sorter/",
+      "category": "game",
+      "role": "Game Developer",
+      "description": "Built a browser game as a technical assignment. Players guide a dog to sort ducks by color, with adjustable numbers of ducks and colors.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Sass (SCSS)",
+        "Canvas 2D"
+      ]
+    }
+  ],
   "contacts": [
     {
       "id": 1,

@@ -1,0 +1,29 @@
+@import 'variables';
+
+@mixin cv-scrollbar($width: 10px) {
+  overscroll-behavior: contain;
+
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($lightText, 0.08);
+    border-radius: 8px;
+    margin: 8px 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($lightText, 0.35);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba($lightText, 0.55);
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba($lightText, 0.45) transparent;
+}
