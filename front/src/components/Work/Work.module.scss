@@ -78,13 +78,12 @@ $innerPadBottom: 40px;
 	color: $darkText;
 	background-color: $lightText;
 	border-radius: 4px;
-	transition: all 0.3s;
+	transition: color 0.2s ease;
 	cursor: pointer;
 	outline-color: $red;
 
 	&:hover {
 		color: $red;
-		outline: 1px solid $red;
 	}
 
 	&--active {
@@ -93,7 +92,6 @@ $innerPadBottom: 40px;
 
 		&:hover {
 			color: $lightText;
-			background-color: $red;
 		}
 	}
 }

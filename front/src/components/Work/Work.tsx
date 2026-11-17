@@ -12,7 +12,7 @@ export const Work: React.FC<Props> = () => {
   const season = useContext(SeasonContext)
 
   const buttons = Object.values(WorkComponents);
-  const [button, setButton] = useState<string>(WorkComponents.experience);
+  const [button, setButton] = useState<WorkComponents>(WorkComponents.portfolio);
 
   return (
 		<main

@@ -12,8 +12,8 @@ export enum MainComponents {
 }
 
 export enum WorkComponents {
-	experience = 'experience',
 	portfolio = 'portfolio',
+	experience = 'experience',
 }
 
 export const getCurrentComponent = (component: string) => {
