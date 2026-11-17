@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.07f81b6d.css",
-    "main.js": "./static/js/main.44f2edf4.js",
+    "main.css": "./static/css/main.0715ad70.css",
+    "main.js": "./static/js/main.b2c24fd0.js",
     "static/media/bg.png": "./static/media/bg.5eb41e345de50ce61724.png",
     "static/media/avatar_color.jpg": "./static/media/avatar_color.45fda9d6b9a05ebaa759.jpg",
     "static/media/Gilroy-UltraLightItalic.ttf": "./static/media/Gilroy-UltraLightItalic.87f0acd42b27a5408e0b.ttf",
@@ -33,11 +33,11 @@
     "static/media/linkedin.svg": "./static/media/linkedin.f94168669a309db66c222264a040d087.svg",
     "static/media/telegram.svg": "./static/media/telegram.e3d3399f7ad692f73755965c283764cb.svg",
     "index.html": "./index.html",
-    "main.07f81b6d.css.map": "./static/css/main.07f81b6d.css.map",
-    "main.44f2edf4.js.map": "./static/js/main.44f2edf4.js.map"
+    "main.0715ad70.css.map": "./static/css/main.0715ad70.css.map",
+    "main.b2c24fd0.js.map": "./static/js/main.b2c24fd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.07f81b6d.css",
-    "static/js/main.44f2edf4.js"
+    "static/css/main.0715ad70.css",
+    "static/js/main.b2c24fd0.js"
   ]
 }
